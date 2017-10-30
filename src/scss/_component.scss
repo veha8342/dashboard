@@ -1,0 +1,115 @@
+//component
+
+//Title
+
+%title{
+  font-size: $titleFontSize;
+  color: $titleColor;
+  text-transform: uppercase;
+  font-weight: $fontBold;
+}
+
+.section-title{
+  @extend %title;
+}
+
+.page-title{
+  @extend %title;
+  text-transform: uppercase;
+}
+
+//Links
+
+.link{
+  font-size: $linkFontSizeDeafault;
+  color: $linkColor;
+
+  &.large-link{
+    font-size: $linkLargeFont;
+  }
+  
+  &:hover{
+    color: $linkhoverColor;
+  }
+}
+
+//Button
+
+.btn{
+  font-size: $btnFontSize;
+  padding: 12px 22px;
+  color: $btnDefaultColor;
+  border-radius: 2px;
+  display: inline-block;
+
+  &.btn-default{
+    background-color: $btnDefaultBg;
+
+    &:hover{
+      background-color: $btnDefaultBgHover;
+    }
+  }
+
+  &.btn-action{
+    background-color: $btnActionBg;
+
+    &:hover{
+      background-color: $btnActionBgHover;
+    }
+  }
+
+  &.btn-disable{
+    background-color: $btnDisableBg;
+    cursor: not-allowed;
+
+    &:hover{
+      background-color: $btnDisableBgHover;
+    }
+  }
+}
+
+//TABLES
+
+.table{
+  border-collapse: collapse;
+  font-size: $tableFontSize;
+
+  tbody{
+     tr{
+       &:hover{
+         background-color: $tableTrHover;
+       }
+     }
+  }
+
+  .table-sort{
+    color: $grey;
+    padding: 8px 10px;
+    margin: -8px -10px;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $xsLightGrey;
+      color: $black;
+    }
+  }
+  tr{
+
+    th{
+      padding: 30px 18px;
+      color: $grey;
+    }
+
+    td{
+      padding: 18px;
+      border-top: 1px solid $lightGrey;
+
+      &.td-title{
+        font-size: 16px;
+        color: $grey;
+      }
+    }
+  }
+
+}

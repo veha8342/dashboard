@@ -85,10 +85,10 @@ gulp.task('css-libs', ['css'], function() {
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
-gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sprite', 'sass', 'iconfont'], function() {
+gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sprite', 'sass'], function() {
     // gulp.watch('src/css/**/*.css', ['css']); // Наблюдение за css файлами в папке css
     gulp.watch('src/scss/**/*.scss', ['sass']);
-    gulp.watch('src/icons/*.svg', ['iconfont']);
+    // gulp.watch('src/icons/*.svg', ['iconfont']);
     gulp.watch('src/sprite/*.png', ['sprite']); // Наблюдение за папкой с картинками для спрайтов  папке sprite
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js

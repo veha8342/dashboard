@@ -1,0 +1,55 @@
+// FONT VAR
+$fontFamily: 'Roboto', sans-serif;
+$fontLight: 300;
+$fontRegular: 400;
+$fontMedium: 500;
+$fontBold: 700;
+$lineHeight: 1;
+$fontSize: 14px;
+
+//COLOR VAR
+
+$black: #333333;
+$darkGrey: #979797;
+$grey: #bababa;
+$lightGrey: #e3e3e3;
+$xsLightGrey: #f5f5f2;
+
+$orange: #f58220;
+$orangeLight: #ffa200;
+$green: #04ae00;
+$lightGreen: #04ae00;
+$xsLightGreen: #96cc9b;
+$red: #ff0000;
+$pink: #de5252;
+$lightPink: #ec7171;
+$blue: #56819f;
+
+
+//Component var
+
+//Link
+$linkColor: #56819f;
+$linkhoverColor: #ffa200;
+$linkFontSizeDeafault: 13px;
+$linkLargeFont: 16px;
+
+//Title component
+$titleFontSize: 16px;
+$titleColor: #a6a6a6;
+
+//btn component
+
+$btnFontSize: 18px;
+$btnDefaultColor: #fff;
+$btnDefaultBg: $darkGrey;
+$btnDefaultBgHover: $grey;
+$btnActionBg: $orange;
+$btnActionBgHover: $orangeLight;
+$btnDisableBg: $lightGrey;
+$btnDisableBgHover: $lightGrey;
+
+// TABLES COMPONENT
+
+$tableFontSize: 13px;
+$tableTrHover: #f1f3f3;

@@ -1,0 +1,40 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  color: $black;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontLight;
+}
+/*General reset*/
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+img{
+  border: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+input, select, textarea{
+  outline:none;
+  border:none;
+}
+textarea{
+  resize:vertical
+}
+button, input[type="submit"]{
+  cursor:pointer;
+}
