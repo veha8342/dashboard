@@ -151,6 +151,7 @@
   display: inline-block;
   font-size: $tableFontSize;
   background-color: $tabDefColor;
+  cursor: pointer;
 
   &.tab-default{
     &:hover{
