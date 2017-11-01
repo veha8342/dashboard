@@ -143,3 +143,51 @@
     }
   }
 }
+
+// color tabs
+.color-tab{
+  padding: 12px 19px 12px 8px;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: $tableFontSize;
+  background-color: $tabDefColor;
+
+  &.tab-default{
+    &:hover{
+      background-color: $greyTabBg;
+    }
+  }
+
+  .circle{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $greenTabBg;
+    margin-right: 13px;
+  }
+
+  span{
+    font-size: $tableFontSize;
+  }
+}
+
+//header
+
+.header{
+  background-color: #fff;
+  border-bottom: 1px solid $lightGrey;
+  right: 0;
+  left: 0;
+  height: 60px;
+}
+
+//aside
+
+.aside{
+  background-color: $asideBg;
+  width: $asideWidth;
+  height: 100vh;
+  left: 0;
+  z-index: 100;
+}

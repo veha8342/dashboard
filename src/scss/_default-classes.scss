@@ -1,3 +1,14 @@
 .text-bold{
   font-weight: $fontBold;
 }
+// class position fixed
+.fixed-to-top{
+  top: 0;
+  position: fixed;
+  z-index: 99;
+}
+
+//class flexbox
+.flex-container{
+  display: flex;
+}

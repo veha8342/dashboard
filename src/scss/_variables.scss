@@ -25,7 +25,8 @@ $pink: #de5252;
 $lightPink: #ec7171;
 $blue: #56819f;
 
-
+//default padding
+$defaultPadding: 18px;
 //Component var
 
 //Link
@@ -53,3 +54,14 @@ $btnDisableBgHover: $lightGrey;
 
 $tableFontSize: 13px;
 $tableTrHover: #f1f3f3;
+
+// color tabs
+
+$greenTabBg: #80bfca;
+$greyTabBg: #f3f3f1;
+$tabFontSize: 16px;
+$tabDefColor: #fff;
+
+//aside comp
+$asideBg: #191919;
+$asideWidth: 188px;
