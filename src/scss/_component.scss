@@ -173,6 +173,13 @@
   }
 }
 
+//container
+
+.container-fluid{
+  padding: $defaultPadding;
+}
+
+
 //header
 
 .header{
@@ -191,4 +198,22 @@
   height: 100vh;
   left: 0;
   z-index: 100;
+
+  .menu-control{
+    padding: $defaultPadding;
+
+    .menu-btn{
+
+      span{
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: $darkGrey;
+
+        & + span{
+          margin-top: 5px;
+        }
+      }
+    }
+  }
 }
