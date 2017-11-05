@@ -16,12 +16,16 @@
 .page-title{
   @extend %title;
   text-transform: uppercase;
+
+  .small-title{
+    font-size: $smallTitleFontSize;
+  }
 }
 
 //Links
 
 .link{
-  font-size: $linkFontSizeDeafault;
+  font-size: $linkFontSizeDefault;
   color: $linkColor;
 
   &.large-link{
@@ -176,7 +180,7 @@
 //container
 
 .container-fluid{
-  padding: $defaultPadding;
+  padding: $indent;
 }
 
 
@@ -191,7 +195,11 @@
 }
 
 //aside
-
+%activeLink{
+  background-color: #282828;
+  color: #fff;
+  border-left-color: $orange;
+}
 .aside{
   background-color: $asideBg;
   width: $asideWidth;
@@ -200,9 +208,10 @@
   z-index: 100;
 
   .menu-control{
-    padding: $defaultPadding;
+    padding: $indent;
 
     .menu-btn{
+      cursor: pointer;
 
       span{
         display: block;
@@ -212,6 +221,62 @@
 
         & + span{
           margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .aside-menu{
+
+    ul{
+
+      li{
+        color: $darkGrey;
+
+        &.active{
+          a{
+            @extend %activeLink;
+          }
+        }
+
+      a{
+        display: block;
+        padding: 14px;
+        border-left: 4px solid transparent;
+        
+        &:hover{
+          @extend %activeLink;
+        }
+        }
+      }
+    }
+  }
+  .your-manager{
+    padding: 27px $indent 0;
+    border-top: $darkGrey;
+
+    .manager-info{
+      margin-top: 18px;
+
+      .manager-photo{
+        position: relative;
+        margin-right: 10px;
+
+        .status{
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          &.online{
+            background-color: $green;
+          }
+
+          &.offline{
+            background-color: $red;
+          }
         }
       }
     }
