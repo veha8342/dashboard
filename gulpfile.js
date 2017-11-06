@@ -41,7 +41,7 @@ gulp.task('css', function(){ // Создаем таск Sass
 
 gulp.task('sass', function () {
     gulp.src('src/scss/**/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('app/css'))
 }) ;

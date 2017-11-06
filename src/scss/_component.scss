@@ -46,6 +46,10 @@
   border-radius: 2px;
   display: inline-block;
 
+  & + .btn{
+    margin-left: $indent;
+  }
+
   &.btn-default{
     background-color: $btnDefaultBg;
 
@@ -77,6 +81,10 @@
 .table{
   border-collapse: collapse;
   font-size: $tableFontSize;
+
+  &.full-width{
+    width: 100%;
+  }
 
   tbody{
      tr{
@@ -183,6 +191,11 @@
   padding: $indent;
 }
 
+.container-sm{
+  max-width: 684px;
+  margin: 0 auto;
+}
+
 
 //header
 
@@ -206,6 +219,7 @@
   height: 100vh;
   left: 0;
   z-index: 100;
+  overflow-y: auto;
 
   .menu-control{
     padding: $indent;
@@ -280,5 +294,31 @@
         }
       }
     }
+  }
+}
+
+//content wrapper
+
+.content-wrapper{
+  padding: $indent;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+
+  .panel{
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  & + .panel{
+    margin-top: $indent;
+  }
+
+  .panel-header{
+    border-bottom: 1px solid $lightGrey;
+    padding: $indent;
+  }
+
+  .panel-body{
+    padding: $indent;
   }
 }
