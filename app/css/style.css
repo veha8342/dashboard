@@ -113,6 +113,8 @@ button, input[type="submit"] {
   font-size: 13px; }
   .table.full-width {
     width: 100%; }
+  .table tbody tr:last-child td {
+    border-bottom: 1px solid #e3e3e3; }
   .table tbody tr:hover {
     background-color: #f1f3f3; }
   .table .table-sort {
@@ -134,6 +136,18 @@ button, input[type="submit"] {
     .table tr td.td-title {
       font-size: 16px;
       color: #bababa; }
+
+.pagination li.active, .pagination li a:hover {
+  background-color: #96cc9b;
+  color: #bababa;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.pagination li {
+  display: inline-block; }
+  .pagination li a {
+    display: inline-block;
+    padding: 18px; }
 
 .form-control textarea {
   border: 1px solid #bababa;

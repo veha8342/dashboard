@@ -87,7 +87,17 @@
   }
 
   tbody{
+
      tr{
+
+       &:last-child{
+
+         td{
+           border-bottom: 1px solid $lightGrey;
+         }
+
+       }
+
        &:hover{
          background-color: $tableTrHover;
        }
@@ -124,6 +134,32 @@
     }
   }
 
+}
+
+//pagination
+%activePaginationLink{
+  background-color: $xsLightGreen;
+  color: $grey;
+  border-radius: 2px;
+}
+
+.pagination{
+  li {
+    display: inline-block;
+
+    &.active{
+      @extend %activePaginationLink;
+    }
+
+    a{
+      display: inline-block;
+      padding: $indent;
+
+      &:hover{
+        @extend %activePaginationLink;
+      }
+    }
+  }
 }
 
 // FORM
