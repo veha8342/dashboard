@@ -8,6 +8,10 @@
 .text-left{
   text-align: left;
 }
+
+.text-end{
+  justify-content: flex-end;
+}
 // class position fixed
 .fixed-to-top{
   top: 0;

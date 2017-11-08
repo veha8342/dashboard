@@ -8,6 +8,20 @@
   }
 }
 
+.user-control{
+  display: flex;
+  align-items: center;
+  font-size: $titleFontSize;
+  color: $darkGrey;
+  &:before{
+    content: "";
+    width: 2px;
+    height: 35px;
+    background-color: $lightGrey;
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
 
 // main style
 
