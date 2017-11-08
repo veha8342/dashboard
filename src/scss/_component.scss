@@ -145,6 +145,7 @@
 }
 
 .pagination{
+  padding: 17px 0 35px 0;
   li {
     display: inline-block;
 
@@ -349,6 +350,25 @@
 
   & + .panel{
     margin-top: $indent;
+  }
+
+  .panel-header{
+    border-bottom: 1px solid $lightGrey;
+    padding: $indent;
+  }
+
+  .panel-body{
+    padding: $indent;
+  }
+}
+
+.content-wrapper-payout{
+
+  padding: $indent;
+
+  .panel{
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   .panel-header{

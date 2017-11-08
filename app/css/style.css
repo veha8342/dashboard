@@ -43,6 +43,9 @@ button, input[type="submit"] {
 .text-center {
   text-align: center; }
 
+.text-left {
+  text-align: left; }
+
 .fixed-to-top {
   top: 0;
   position: fixed;
@@ -143,11 +146,13 @@ button, input[type="submit"] {
   -webkit-border-radius: 2px;
           border-radius: 2px; }
 
-.pagination li {
-  display: inline-block; }
-  .pagination li a {
-    display: inline-block;
-    padding: 18px; }
+.pagination {
+  padding: 17px 0 35px 0; }
+  .pagination li {
+    display: inline-block; }
+    .pagination li a {
+      display: inline-block;
+      padding: 18px; }
 
 .form-control textarea {
   border: 1px solid #bababa;
@@ -267,6 +272,18 @@ button, input[type="submit"] {
     border-bottom: 1px solid #e3e3e3;
     padding: 18px; }
   .content-wrapper .panel-body {
+    padding: 18px; }
+
+.content-wrapper-payout {
+  padding: 18px; }
+  .content-wrapper-payout .panel {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+  .content-wrapper-payout .panel-header {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 18px; }
+  .content-wrapper-payout .panel-body {
     padding: 18px; }
 
 .guide-wrap {
