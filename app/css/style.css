@@ -180,12 +180,12 @@ button, input[type="submit"] {
       padding: 18px; }
 
 .form-control textarea {
-  border: 1px solid #bababa;
+  border: 1px solid #e3e3e3;
   padding: 18px 0 50px 18px; }
 
 .form-control input {
   border: 1px solid #bababa;
-  padding: 18px;
+  padding: 10px;
   -webkit-border-radius: 2px;
           border-radius: 2px; }
   .form-control input.warning {
@@ -261,6 +261,9 @@ button, input[type="submit"] {
       display: block;
       padding: 14px;
       border-left: 4px solid transparent; }
+      .aside .aside-menu ul li a .icon {
+        font-size: 17px;
+        margin-right: 15px; }
   .aside .your-manager {
     padding: 27px 18px 0;
     border-top: #979797; }
@@ -287,29 +290,28 @@ button, input[type="submit"] {
   height: -webkit-calc(100vh - 60px);
   height: calc(100vh - 60px);
   overflow-y: auto; }
-  .content-wrapper .panel {
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
-  .content-wrapper + .panel {
-    margin-top: 18px; }
-  .content-wrapper .panel-header {
-    border-bottom: 1px solid #e3e3e3;
-    padding: 18px; }
-  .content-wrapper .panel-body {
-    padding: 18px; }
 
-.content-wrapper-payout {
+.panel {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+  .panel + .panel {
+    margin-top: 18px; }
+
+.panel-header {
+  border-bottom: 1px solid #e3e3e3;
   padding: 18px; }
-  .content-wrapper-payout .panel {
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
-  .content-wrapper-payout .panel-header {
-    border-bottom: 1px solid #e3e3e3;
-    padding: 18px; }
-  .content-wrapper-payout .panel-body {
-    padding: 18px; }
+
+.panel-body {
+  padding: 18px; }
+
+.panel-form {
+  padding: 40px 0;
+  border-bottom: 1px solid #e3e3e3;
+  text-align: center; }
+  .panel-form form {
+    min-width: 455px;
+    display: inline-block; }
 
 .guide-wrap {
   padding: 20px; }
