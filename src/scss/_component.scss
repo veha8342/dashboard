@@ -1,6 +1,9 @@
 //component
 
-
+.circle{
+  display: inline-block;
+  border-radius: 50%;
+}
 
 
 
@@ -145,15 +148,42 @@
 .user-control{
   display: flex;
   align-items: center;
-  font-size: $titleFontSize;
   color: $darkGrey;
+  line-height: 60px;
+  transform: translateY(-18px);
+
+  .circle{
+    background-color: orange;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: -1px;
+    top: 17px;
+  }
+
+  .icon{
+    font-size: 15px;
+  }
+
+  a{
+    margin-right: 20px;
+  }
+
+  span{
+    margin-right: 20px;
+  }
+
+  &:last-child span{
+    margin: 0;
+  }
+
   &:before{
     content: "";
     width: 2px;
-    height: 35px;
+    height: 100%;
     background-color: $lightGrey;
     display: inline-block;
-    margin: 0 15px;
+    margin-right: 20px;
   }
 }
 
@@ -239,8 +269,6 @@
   .circle{
     width: 17px;
     height: 17px;
-    display: inline-block;
-    border-radius: 50%;
     background-color: $greenTabBg;
     margin-right: 13px;
   }

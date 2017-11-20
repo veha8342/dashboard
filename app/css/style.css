@@ -75,6 +75,11 @@ button, input[type="submit"] {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.circle {
+  display: inline-block;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
 .section-title, .page-title {
   font-size: 16px;
   color: #a6a6a6;
@@ -155,15 +160,33 @@ button, input[type="submit"] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px;
-  color: #979797; }
+  color: #979797;
+  line-height: 60px;
+  -webkit-transform: translateY(-18px);
+      -ms-transform: translateY(-18px);
+          transform: translateY(-18px); }
+  .user-control .circle {
+    background-color: orange;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: -1px;
+    top: 17px; }
+  .user-control .icon {
+    font-size: 15px; }
+  .user-control a {
+    margin-right: 20px; }
+  .user-control span {
+    margin-right: 20px; }
+  .user-control:last-child span {
+    margin: 0; }
   .user-control:before {
     content: "";
     width: 2px;
-    height: 35px;
+    height: 100%;
     background-color: #e3e3e3;
     display: inline-block;
-    margin: 0 15px; }
+    margin-right: 20px; }
 
 .pagination li.active, .pagination li a:hover {
   background-color: #96cc9b;
@@ -224,9 +247,6 @@ input:hover {
   .color-tab .circle {
     width: 17px;
     height: 17px;
-    display: inline-block;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
     background-color: #80bfca;
     margin-right: 13px; }
   .color-tab span {
