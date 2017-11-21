@@ -210,15 +210,19 @@ textarea {
   border: 1px solid #e3e3e3;
   padding: 18px 0 50px 18px; }
 
-input.warning {
-  border: 2px solid #ff0000; }
-  input.warning:hover {
-    cursor: not-allowed; }
-
-input:hover {
-  border: 1px solid #979797;
-  cursor: pointer;
-  color: #333333; }
+input {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 14px;
+  font-family: Roboto regular; }
+  input.warning {
+    border: 2px solid #ff0000; }
+    input.warning:hover {
+      cursor: not-allowed; }
+  input:hover {
+    border: 1px solid #979797;
+    cursor: pointer;
+    color: #333333; }
 
 .label-group {
   display: -webkit-box;
@@ -341,10 +345,10 @@ input:hover {
   padding: 18px; }
 
 .panel-body {
-  padding: 18px; }
+  padding: 0 18px; }
 
 .panel-footer {
-  padding: 12px 0 30px 0; }
+  padding: 30px 0; }
 
 .panel-form {
   padding: 40px 0;
