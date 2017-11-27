@@ -79,6 +79,10 @@ button, input[type="submit"] {
   display: inline-block;
   -webkit-border-radius: 50%;
           border-radius: 50%; }
+  .circle.online {
+    background-color: #04ae00; }
+  .circle.offline {
+    background-color: #ff0000; }
 
 .section-title, .page-title {
   font-size: 16px;
@@ -163,6 +167,8 @@ button, input[type="submit"] {
   color: #979797;
   padding: 21px 0 21px 20px;
   border-left: 1px solid #e3e3e3; }
+  .user-control:nth-child(2) {
+    position: relative; }
   .user-control .icon {
     font-size: 15px; }
     .user-control .icon.icon-notification {
@@ -171,7 +177,9 @@ button, input[type="submit"] {
     background-color: orange;
     width: 8px;
     height: 8px;
-    position: absolute; }
+    position: absolute;
+    top: 19px;
+    right: 0; }
   .user-control a {
     margin-right: 20px; }
   .user-control span {
@@ -265,24 +273,18 @@ button, input[type="submit"] {
         margin-right: 15px; }
   .aside .your-manager {
     padding: 27px 18px 0;
-    border-top: #979797; }
+    border-top: 1px solid #979797; }
     .aside .your-manager .manager-info {
       margin-top: 18px; }
       .aside .your-manager .manager-info .manager-photo {
         position: relative;
         margin-right: 10px; }
-        .aside .your-manager .manager-info .manager-photo .status {
+        .aside .your-manager .manager-info .manager-photo .circle {
           width: 11px;
           height: 11px;
-          -webkit-border-radius: 50%;
-                  border-radius: 50%;
           position: absolute;
           right: 0;
           top: 0; }
-          .aside .your-manager .manager-info .manager-photo .status.online {
-            background-color: #04ae00; }
-          .aside .your-manager .manager-info .manager-photo .status.offline {
-            background-color: #ff0000; }
 
 .content-wrapper {
   padding: 18px;

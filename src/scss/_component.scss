@@ -3,6 +3,14 @@
 .circle{
   display: inline-block;
   border-radius: 50%;
+
+  &.online{
+    background-color: $green;
+  }
+
+  &.offline{
+    background-color: $red;
+  }
 }
 
 
@@ -151,6 +159,10 @@
   color: $darkGrey;
   padding: 21px 0 21px 20px;
   border-left: 1px solid $lightGrey;
+  
+  &:nth-child(2){
+    position: relative;
+  }
 
   .icon{
     font-size: 15px;
@@ -165,6 +177,8 @@
     width: 8px;
     height: 8px;
     position: absolute;
+    top: 19px;
+    right: 0;
   }
 
   a{
@@ -178,7 +192,7 @@
   &:last-child span{
     margin: 0;
   }
-  
+
 }
 
 //pagination
@@ -329,9 +343,10 @@
       }
     }
   }
+
   .your-manager{
     padding: 27px $indent 0;
-    border-top: $darkGrey;
+    border-top: 1px solid $darkGrey;
 
     .manager-info{
       margin-top: 18px;
@@ -340,21 +355,13 @@
         position: relative;
         margin-right: 10px;
 
-        .status{
+        .circle{
           width: 11px;
           height: 11px;
-          border-radius: 50%;
           position: absolute;
           right: 0;
           top: 0;
 
-          &.online{
-            background-color: $green;
-          }
-
-          &.offline{
-            background-color: $red;
-          }
         }
       }
     }
