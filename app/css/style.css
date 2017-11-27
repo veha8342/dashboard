@@ -161,32 +161,23 @@ button, input[type="submit"] {
       -ms-flex-align: center;
           align-items: center;
   color: #979797;
-  line-height: 60px;
-  -webkit-transform: translateY(-18px);
-      -ms-transform: translateY(-18px);
-          transform: translateY(-18px); }
+  padding: 21px 0 21px 20px;
+  border-left: 1px solid #e3e3e3; }
+  .user-control .icon {
+    font-size: 15px; }
+    .user-control .icon.icon-notification {
+      position: relative; }
   .user-control .circle {
     background-color: orange;
     width: 8px;
     height: 8px;
-    position: absolute;
-    right: -1px;
-    top: 17px; }
-  .user-control .icon {
-    font-size: 15px; }
+    position: absolute; }
   .user-control a {
     margin-right: 20px; }
   .user-control span {
     margin-right: 20px; }
   .user-control:last-child span {
     margin: 0; }
-  .user-control:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-color: #e3e3e3;
-    display: inline-block;
-    margin-right: 20px; }
 
 .pagination li.active, .pagination li a:hover {
   background-color: #96cc9b;
@@ -201,42 +192,6 @@ button, input[type="submit"] {
     .pagination li a {
       display: inline-block;
       padding: 18px; }
-
-.form-control {
-  border: 1px solid #bababa;
-  height: 40px; }
-
-textarea {
-  border: 1px solid #e3e3e3;
-  padding: 18px 0 50px 18px; }
-
-input {
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  font-size: 14px;
-  font-family: Roboto regular; }
-  input.warning {
-    border: 2px solid #ff0000; }
-    input.warning:hover {
-      cursor: not-allowed; }
-  input:hover {
-    border: 1px solid #979797;
-    cursor: pointer;
-    color: #333333; }
-
-.label-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
 
 .color-tab {
   padding: 12px 19px 12px 8px;
@@ -256,9 +211,6 @@ input {
   .color-tab span {
     font-size: 13px; }
 
-.container-fluid {
-  padding: 18px; }
-
 .container-sm {
   max-width: 684px;
   margin: 0 auto; }
@@ -267,12 +219,17 @@ input {
   margin-left: -18px;
   margin-right: -18px; }
 
+.container-fluid {
+  padding: 18px; }
+
+.container-fluid-header {
+  padding: 0 18px; }
+
 .header {
   background-color: #fff;
   border-bottom: 1px solid #e3e3e3;
   right: 0;
-  left: 0;
-  height: 60px; }
+  left: 0; }
 
 .aside .aside-menu ul li.active a, .aside .aside-menu ul li a:hover {
   background-color: #282828;
@@ -339,28 +296,72 @@ input {
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
   .panel + .panel {
     margin-top: 18px; }
+  .panel .panel-header {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 18px; }
+  .panel .panel-body {
+    padding: 0 18px; }
+  .panel .panel-footer {
+    padding: 30px 0; }
 
-.panel-header {
-  border-bottom: 1px solid #e3e3e3;
-  padding: 18px; }
-
-.panel-body {
-  padding: 0 18px; }
-
-.panel-footer {
+.panel-data {
   padding: 30px 0; }
 
 .panel-form {
   padding: 40px 0;
   border-bottom: 1px solid #e3e3e3;
   text-align: center; }
-  .panel-form form {
-    width: 455px;
-    display: inline-block; }
-    .panel-form form .label-group + .label-group {
-      margin-top: 15px; }
-    .panel-form form .form-control {
-      width: 310px; }
+
+form {
+  width: 455px;
+  display: inline-block; }
+  form .label-group + .label-group {
+    margin-top: 15px; }
+
+.form-control {
+  width: 310px;
+  border: 1px solid #bababa;
+  height: 40px;
+  padding: 6px 18px; }
+
+.date-input-wrap {
+  padding: 4px 0;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  display: inline-block; }
+
+textarea {
+  border: 1px solid #e3e3e3;
+  padding: 18px 0 50px 18px; }
+
+input {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif; }
+  input.warning {
+    border: 2px solid #ff0000; }
+    input.warning:hover {
+      cursor: not-allowed; }
+  input:hover {
+    border: 1px solid #979797;
+    cursor: pointer;
+    color: #333333; }
+
+.label-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .guide-wrap {
   padding: 20px; }

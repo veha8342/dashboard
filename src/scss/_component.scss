@@ -149,20 +149,22 @@
   display: flex;
   align-items: center;
   color: $darkGrey;
-  line-height: 60px;
-  transform: translateY(-18px);
+  padding: 21px 0 21px 20px;
+  border-left: 1px solid $lightGrey;
+
+  .icon{
+    font-size: 15px;
+    
+    &.icon-notification{
+      position: relative;
+    }
+  }
 
   .circle{
     background-color: orange;
     width: 8px;
     height: 8px;
     position: absolute;
-    right: -1px;
-    top: 17px;
-  }
-
-  .icon{
-    font-size: 15px;
   }
 
   a{
@@ -176,15 +178,7 @@
   &:last-child span{
     margin: 0;
   }
-
-  &:before{
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-color: $lightGrey;
-    display: inline-block;
-    margin-right: 20px;
-  }
+  
 }
 
 //pagination
@@ -214,47 +208,6 @@
   }
 }
 
-// FORM
-
-.form-control{
-
-  border: 1px solid $grey;
-  height: 40px;
-}
-
-  textarea{
-    border: 1px solid $lightGrey;
-    padding: 18px 0 50px 18px;
-  }
-
-  input{
-
-    border-radius: 2px;
-    font-size: 14px;
-    font-family: Roboto regular;
-
-    &.warning{
-      border: 2px solid $red;
-
-      &:hover{
-        cursor: not-allowed;
-      }
-    }
-
-    &:hover{
-      border: 1px solid $darkGrey;
-      cursor: pointer;
-      color: $black;
-    }
-  }
-
-
-.label-group{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 // color tabs
 .color-tab{
   padding: 12px 19px 12px 8px;
@@ -282,11 +235,7 @@
   }
 }
 
-//container
 
-.container-fluid{
-  padding: $indent;
-}
 
 .container-sm{
   max-width: 684px;
@@ -300,14 +249,20 @@
   margin-right: -$indent;
 }
 
-//header
+//container
+.container-fluid{
+  padding: $indent;
+}
+.container-fluid-header{
+  padding: 0 $indent;
+}
 
+//HEADER
 .header{
   background-color: #fff;
   border-bottom: 1px solid $lightGrey;
   right: 0;
   left: 0;
-  height: 60px;
 }
 
 //aside
@@ -420,40 +375,90 @@
     & + .panel{
       margin-top: $indent;
     }
+
+    .panel-header{
+      border-bottom: 1px solid $lightGrey;
+      padding: $indent;
+    }
+
+    .panel-body{
+      padding: 0 $indent;
+    }
+
+    .panel-footer{
+      padding: 30px 0;
+    }
   }
 
-  .panel-header{
-    border-bottom: 1px solid $lightGrey;
-    padding: $indent;
-  }
-
-  .panel-body{
-    padding: 0 $indent;
-  }
-
-  .panel-footer{
+  .panel-data{
     padding: 30px 0;
-}
+  }
 
-.panel-form{
+.panel-form {
   padding: 40px 0;
   border-bottom: 1px solid $lightGrey;
   text-align: center;
+}
 
-  form{
+  form {
     width: 455px;
     display: inline-block;
 
-    .label-group{
+    .label-group {
 
-      & +.label-group{
+      & + .label-group {
         margin-top: 15px;
       }
     }
+  }
 
     //default input
-    .form-control{
-      width: 310px;
-    }
+  .form-control{
+    width: 310px;
+    border: 1px solid $grey;
+    height: 40px;
+    padding: 6px $indent;
   }
-}
+
+  //DATE INPUT BLOCK
+  .date-input-wrap{
+    padding: 4px 0;
+    border: 1px solid $lightGrey;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+    // FORM
+    textarea{
+      border: 1px solid $lightGrey;
+      padding: 18px 0 50px 18px;
+    }
+
+    input{
+      border-radius: 2px;
+      font-size: $fontSize;
+      font-family: $fontFamily;
+
+      &.warning{
+        border: 2px solid $red;
+
+        &:hover{
+          cursor: not-allowed;
+        }
+      }
+
+      &:hover{
+        border: 1px solid $darkGrey;
+        cursor: pointer;
+        color: $black;
+      }
+    }
+
+    .label-group{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+
