@@ -272,7 +272,7 @@ button, input[type="submit"] {
         font-size: 17px;
         margin-right: 15px; }
   .aside .your-manager {
-    padding: 27px 18px 0;
+    padding: 27px 18px;
     border-top: 1px solid #979797; }
     .aside .your-manager .manager-info {
       margin-top: 18px; }
