@@ -23,8 +23,8 @@
 <body>
 <!--HEADER START-->
 <header class="fixed-to-top header">
-    <div class="flex-container container-fluid text-end">
-        <div class="user-control ">
+    <div class="flex-container container-fluid-header text-end">
+        <div class="user-control">
             <span class="icon icon-wallet"></span>
             <span class="page-title">1500</span>
             <span class="icon icon-arrow-down" ></span>
@@ -59,20 +59,20 @@
     </div>
     <div class="aside-menu">
         <ul>
-            <li><a href="#">General</a></li>
+            <li class="active"><a href="#"><span class="icon icon-general"></span>General</a></li>
             <li><a href="#"><span class="icon icon-details"></span>Details</a></li>
-            <li><a href="#">Links</a></li>
-            <li><a href="#">Banners</a></li>
-            <li class="active"><a href="#">Personal data</a></li>
-            <li><a href="#">Payout</a></li>
-            <li><a href="#">Postback</a></li>
+            <li><a href="#"><span class="icon icon-links"></span>Links</a></li>
+            <li><a href="#"><span class="icon icon-banners"></span>Banners</a></li>
+            <li><a href="#"><span class="icon icon-personaldata"></span>Personal data</a></li>
+            <li><a href="#"><span class="icon icon-payout"></span>Payout</a></li>
+            <li><a href="#"><span class="icon icon-postback"></span>Postback</a></li>
         </ul>
         <div class="your-manager">
             <h3 class="section-title page-title">Your manager</h3>
             <div class="manager-info flex-container align-items-center">
                 <div class="manager-photo">
                     <img src="img/manager-img.png" alt="">
-                    <div class="status online"></div>
+                    <div class="circle online"></div>
                 </div>
                 <a href="#" class="link">Mikhael.E</a>
             </div>
@@ -109,11 +109,47 @@
                         </div>
                     </form>
                 </div>
+                <div class="panel-form row">
+                    <form>
+                        <div class="label-group">
+                            <label for="user-skype">Skype</label>
+                            <input type="text" class="form-control" id="user-skype">
+                        </div>
+                        <div class="label-group">
+                            <label for="user-icq">ICQ</label>
+                            <input type="text" class="form-control" id="user-icq">
+                        </div>
+                        <div class="label-group">
+                            <label for="user-msn">MSN</label>
+                            <input type="text" class="form-control" id="user-msn">
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-form row">
+                    <form>
+                        <div class="label-group">
+                            <label for="user-wallet">Wallet</label>
+                            <input type="text" class="form-control" id="user-wallet">
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-form row">
+                    <form>
+                        <div class="label-group">
+                            <label for="user-password">Password</label>
+                            <input type="text" class="form-control" id="user-password">
+                        </div>
+                        <div class="label-group">
+                            <label for="password-repeat">Repeat</label>
+                            <input type="text" class="form-control" id="password-repeat">
+                        </div>
+                    </form>
+                </div>
 
             </div>
             <div class="panel-footer">
                 <div class="btn-row text-center">
-                    <a href="#" class="btn btn-action">SAVE</a>
+                    <a href="#" class="btn btn-action">Save</a>
                 </div>
             </div>
         </div>

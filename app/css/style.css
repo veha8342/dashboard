@@ -200,6 +200,10 @@ button, input[type="submit"] {
     .pagination li a {
       display: inline-block;
       padding: 18px; }
+      .pagination li a.icon {
+        cursor: pointer; }
+        .pagination li a.icon:hover {
+          background-color: #fff; }
 
 .color-tab {
   padding: 12px 19px 12px 8px;
@@ -305,51 +309,22 @@ button, input[type="submit"] {
     padding: 0 18px; }
   .panel .panel-footer {
     padding: 30px 0; }
-
-.panel-data {
-  padding: 30px 0; }
-
-.panel-form {
-  padding: 40px 0;
-  border-bottom: 1px solid #e3e3e3;
-  text-align: center; }
-
-form {
-  width: 455px;
-  display: inline-block; }
-  form .label-group + .label-group {
-    margin-top: 15px; }
+  .panel .panel-form {
+    padding: 40px 0;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center; }
+    .panel .panel-form form {
+      width: 455px;
+      display: inline-block; }
+      .panel .panel-form form .label-group + .label-group {
+        margin-top: 15px; }
+      .panel .panel-form form .form-control {
+        width: 310px; }
 
 .form-control {
-  width: 310px;
   border: 1px solid #bababa;
   height: 40px;
   padding: 6px 18px; }
-
-.date-input-wrap {
-  padding: 4px 0;
-  border: 1px solid #e3e3e3;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  display: inline-block; }
-
-textarea {
-  border: 1px solid #e3e3e3;
-  padding: 18px 0 50px 18px; }
-
-input {
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif; }
-  input.warning {
-    border: 2px solid #ff0000; }
-    input.warning:hover {
-      cursor: not-allowed; }
-  input:hover {
-    border: 1px solid #979797;
-    cursor: pointer;
-    color: #333333; }
 
 .label-group {
   display: -webkit-box;
@@ -365,6 +340,32 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.panel-data {
+  padding: 30px 0; }
+  .panel-data .date-input-wrap {
+    padding: 4px 0;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    display: inline-block; }
+
+textarea {
+  border: 1px solid #e3e3e3;
+  padding: 18px 0 50px 18px; }
+
+input {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif; }
+  input.warning {
+    border: 2px solid #ff0000; }
+    input.warning:hover {
+      cursor: not-allowed; }
+  input:hover {
+    cursor: pointer;
+    color: #333333; }
+
 .guide-wrap {
   padding: 20px; }
   .guide-wrap > * {
@@ -374,7 +375,7 @@ main {
   padding-left: 188px;
   padding-top: 60px; }
 
-.links .table {
+.links {
   margin: 18px 0; }
 
 h1 {

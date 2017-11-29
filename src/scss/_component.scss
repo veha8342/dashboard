@@ -215,6 +215,13 @@
       display: inline-block;
       padding: $indent;
 
+      &.icon{
+        cursor: pointer;
+        &:hover{
+          background-color: #fff;
+        }
+      }
+
       &:hover{
         @extend %activePaginationLink;
       }
@@ -396,45 +403,57 @@
     .panel-footer{
       padding: 30px 0;
     }
-  }
 
-  .panel-data{
-    padding: 30px 0;
-  }
+    .panel-form {
+      padding: 40px 0;
+      border-bottom: 1px solid $lightGrey;
+      text-align: center;
 
-.panel-form {
-  padding: 40px 0;
-  border-bottom: 1px solid $lightGrey;
-  text-align: center;
-}
+      form {
+        width: 455px;
+        display: inline-block;
 
-  form {
-    width: 455px;
-    display: inline-block;
+        .label-group{
 
-    .label-group {
+          & + .label-group {
+            margin-top: 15px;
+          }
+        }
 
-      & + .label-group {
-        margin-top: 15px;
+        .form-control {
+          width: 310px;
+        }
       }
     }
   }
 
     //default input
   .form-control{
-    width: 310px;
     border: 1px solid $grey;
     height: 40px;
     padding: 6px $indent;
   }
 
+  //label group
+.label-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
   //DATE INPUT BLOCK
-  .date-input-wrap{
-    padding: 4px 0;
-    border: 1px solid $lightGrey;
-    border-radius: 3px;
-    display: inline-block;
+
+  .panel-data{
+  padding: 30px 0;
+
+    .date-input-wrap{
+      padding: 4px 0;
+      border: 1px solid $lightGrey;
+      border-radius: 3px;
+      display: inline-block;
+    }
   }
+
 
     // FORM
     textarea{
@@ -456,17 +475,13 @@
       }
 
       &:hover{
-        border: 1px solid $darkGrey;
+        //border: 1px solid $darkGrey;
         cursor: pointer;
         color: $black;
       }
     }
 
-    .label-group{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+
 
 
 
