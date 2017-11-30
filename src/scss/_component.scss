@@ -427,6 +427,38 @@
     }
   }
 
+.panel-date {
+  padding: 30px 0;
+  border-bottom: 1px solid $lightGrey;
+}
+
+//DATE INPUT BLOCK
+
+  .datepicker-form{
+
+    .btn{
+      vertical-align: sub;
+    }
+  }
+
+  .date-input-wrap{
+    padding: 4px 0;
+    border: 1px solid $lightGrey;
+    border-radius: 3px;
+    display: inline-block;
+
+    .date-control{
+      padding: 10px 16px;
+    }
+
+    #to{
+      border-left: 1px solid $lightGrey;
+      background: url("../../app/img/calendar.svg") no-repeat  90%;
+      background-size: 13px 13px;
+    }
+  }
+
+
     //default input
   .form-control{
     border: 1px solid $grey;
@@ -440,20 +472,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
-  //DATE INPUT BLOCK
-
-  .panel-data{
-  padding: 30px 0;
-
-    .date-input-wrap{
-      padding: 4px 0;
-      border: 1px solid $lightGrey;
-      border-radius: 3px;
-      display: inline-block;
-    }
-  }
-
 
     // FORM
     textarea{
