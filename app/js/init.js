@@ -70,4 +70,14 @@ $( function() {
             }
         });
     }
+
+    //modal init
+    var modalBtn = $('.links .btn');
+
+    modalBtn.on('click', function (event) {
+        event.preventDefault();
+        $('.modal').bPopup();
+
+
+    })
 } );

@@ -386,6 +386,9 @@ input {
 .chart-wrap {
   padding-bottom: 30px; }
 
+.modal {
+  background-color: #fff; }
+
 .guide-wrap {
   padding: 20px; }
   .guide-wrap > * {
