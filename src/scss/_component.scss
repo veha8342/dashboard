@@ -509,6 +509,28 @@
 //chart wrap
 .chart-wrap{
   padding-bottom: 30px;
+
+  .chart-statistics{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+
+    .list{
+      width: 40%;
+    }
+
+     li{
+       display: flex;
+       justify-content: space-between;
+      border-bottom: $border;
+
+       & + li{
+         margin-top: 25px;
+       }
+    }
+  }
+
+
 }
 
 //modal
