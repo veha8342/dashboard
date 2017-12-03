@@ -468,9 +468,9 @@
 
     //default input
   .form-control{
-    border: 1px solid $grey;
+    border: $border;
     height: 40px;
-    padding: 6px $indent;
+    padding: $paddingForm;
   }
 
   //label group
@@ -514,6 +514,30 @@
 //modal
 .modal{
   background-color: #fff;
+  display: none;
+
+  .modal-header{
+    border-bottom: 1px solid $lightGrey;
+    padding: $indent;
+  }
+
+  .modal-body{
+    padding: $indent;
+
+    .filtres{
+
+      select{
+        display: none;
+      }
+
+      .modal-form{
+        width: 435px;
+        height: 40px;
+        padding-left: 15px;
+        border: 1px solid $lightGrey;
+      }
+    }
+  }
 }
 
 

@@ -75,9 +75,13 @@ $( function() {
     var modalBtn = $('.links .btn');
 
     modalBtn.on('click', function (event) {
-        event.preventDefault();
+        // event.preventDefault();
         $('.modal').bPopup();
 
+    });
 
-    })
-} );
+
+       $('#choose-company, #choose-flag').styler()
+
+});
+
