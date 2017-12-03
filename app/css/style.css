@@ -669,12 +669,12 @@ input {
 
 .jq-selectbox__trigger {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 18px;
+  right: 18px;
   width: 34px;
   height: 100%; }
 
-.jq-selectbox__trigger-arrow #choose-flag-styler {
+.jq-selectbox__trigger-arrow {
   position: absolute;
   top: 0;
   right: 0;
