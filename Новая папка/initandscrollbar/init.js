@@ -1,6 +1,6 @@
 $( function() {
 
-    //datepicker init
+    // dateoicker init
     var dateFormat = "mm/dd/yy",
         from = $( "#from" )
             .datepicker({
@@ -29,10 +29,9 @@ $( function() {
         }
 
         return date;
-
     }
 
-    //chart init
+
     // chart init
     var ctx = document.getElementById("myChart");
     if (ctx){
@@ -71,23 +70,42 @@ $( function() {
         });
     }
 
-    //modal init
+
+    // modal init
     var modalBtns = $('[data-modal]');
 
     modalBtns.on('click', function (event) {
-        // event.preventDefault();
+        event.preventDefault();
 
         var target = $(this).attr('data-modal');
 
         $(target).bPopup({
-            closeClass: 'close-modal-btn'
+            closeClass:'close-modal'
         });
-
     });
 
-    //formstyler
+    // scrollbar init
+    $('.scrollbar-inner').scrollbar();
 
-       $('#choose-company, #choose-flag').styler()
 
-});
+    // range slider init
+    var handle = $( "#custom-handle" );
+    var range = $( "#slider" );
+    range.slider({
+        value: 60,
+        orientation: "horizontal",
+        range: "min",
+        animate: true,
+        max: 200,
 
+        create: function(event, ui) {
+            handle.append('<span class="value">'+$( this ).slider( "value" )+'hours</span>');
+            var value = handle.find('.value');
+            range.slider('option', 'valueSpan', value);
+        },
+        slide: function( event, ui ) {
+            range.slider( "option" ,"valueSpan").text(ui.value + 'hours');
+        }
+    });
+
+} );

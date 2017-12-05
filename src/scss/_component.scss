@@ -53,7 +53,9 @@
 }
 
 //Button
-
+.btn-row{
+  padding: $indent;
+}
 .btn{
   font-size: $btnFontSize;
   padding: 13px 22px;
@@ -437,7 +439,8 @@
 
   .datepicker-form{
 
-    .btn{
+    .btn
+    {
       vertical-align: middle;
       margin-left: 13px;
       padding: 12px 20px;
@@ -544,7 +547,7 @@
   }
 
   .modal-body{
-    padding: $indent;
+    padding: 0 $indent;
 
     .filtres{
 
@@ -563,3 +566,30 @@
 }
 
 
+//checkbox wrap
+
+.checkbox-wrap{
+  padding: 30px 0;
+
+  .checkboxes{
+    padding-top: 30px;
+    height: 150px;
+    flex-wrap: wrap;
+
+    .checkbox-group{
+      padding: 12px;
+
+      &:hover{
+        background-color: $xsLightGrey;
+      }
+    }
+  }
+}
+
+#add-links-modal{
+  width: 1075px;
+
+  .checkbox-group{
+    width: 33.3333%;
+  }
+}

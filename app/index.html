@@ -16,7 +16,6 @@
 
     <!--JQUERY CSS-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="../src/scss/_jquery.formstyler.theme.scss">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -125,6 +124,20 @@
                                 </ul>
 
                             </div>
+                            <div class="guide-wrap text-center">
+                                <div class="color-tab tab-default">
+                                    <span class="circle"></span>
+                                    <span>color tab</span>
+                                </div>
+                                <div class="color-tab">
+                                    <span class="circle"></span>
+                                    <span>color tab</span>
+                                </div>
+                                <div class="color-tab">
+                                    <span class="circle"></span>
+                                    <span>color tab</span>
+                                </div>
+                            </div>
 
                             <canvas id="myChart" width="400" height="400"></canvas>
 
@@ -136,7 +149,7 @@
             <div class="panel">
                 <div class="panel-body">
                     <div class="btn-row links text-center">
-                        <a href="#" class="btn btn-action">add new</a>
+                        <a href="#" class="btn btn-action" data-modal="#add-links-modal">add new</a>
                     </div>
                     <div class="container-sm">
                         <table class="table full-width">
@@ -183,7 +196,7 @@
                         </table>
                     </div>
                     <div class="btn-row links text-center ">
-                        <a href="#" class="btn btn-action">add new</a>
+                        <a href="#" class="btn btn-action" data-modal="#add-links-modal">add new</a>
                     </div>
                 </div>
             </div>
@@ -195,6 +208,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src="js/jquery.bpopup.min.js"></script>
+    <script src="js/jquery.scrollbar.js"></script>
     <script src="js/jquery.formstyler.js"></script>
 
     <!--INIT PLUGINS-->
@@ -206,6 +220,42 @@
         <h3 class="page-title">Add url</h3>
     </div>
     <div class="modal-body">
+        <div class="checkbox-wrap">
+            <h3 class="section-title">Select websites</h3>
+
+            <div class="checkboxes flex-container scrollbar-rail">
+                <div class="checkbox-group flex-container align-items-center">
+                    <input type="checkbox" name="link1" id="link1">
+                    <label for="link1">Landing page Money</label>
+                    <span class="icon icon-show"></span>
+                </div>
+                <div class="checkbox-group flex-container align-items-center">
+                    <input type="checkbox" name="link2" id="link2">
+                    <label for="link2">Landing page Money</label>
+                    <span class="icon icon-show"></span>
+                </div>
+                <div class="checkbox-group flex-container align-items-center">
+                    <input type="checkbox" name="link3" id="link3">
+                    <label for="link3">Landing page Money</label>
+                    <span class="icon icon-show"></span>
+                </div>
+                <div class="checkbox-group flex-container align-items-center">
+                    <input type="checkbox" name="link4" id="link4">
+                    <label for="link4">Landing page Money</label>
+                    <span class="icon icon-show"></span>
+                </div>
+                <div class="checkbox-group flex-container align-items-center">
+                    <input type="checkbox" name="link5" id="link5">
+                    <label for="link5">Landing page Money</label>
+                    <span class="icon icon-show"></span>
+                </div>
+                <div class="checkbox-group flex-container align-items-center">
+                    <input type="checkbox" name="link6" id="link6">
+                    <label for="link6">Landing page Money</label>
+                    <span class="icon icon-show"></span>
+                </div>
+            </div>
+        </div>
         <h3  class="small-title section-title">Scheme name</h3>
         <div class="filtres flex-container">
             <input type="text" placeholder="Name" class="modal-form">

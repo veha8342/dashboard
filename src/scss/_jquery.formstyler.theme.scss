@@ -251,9 +251,11 @@
 	right: 0;
 	width: 0;
 	height: 0;
-	border-top: 5px solid #999;
-	border-right: 5px solid transparent;
-	border-left: 5px solid transparent;
+	background-image: url("../../app/img/arrow-down.svg");
+	color: #000;
+	//border-top: 5px solid #999;
+	//border-right: 5px solid transparent;
+	//border-left: 5px solid transparent;
 }
 .jq-selectbox:hover .jq-selectbox__trigger-arrow {
 	border-top-color: #000;
