@@ -566,6 +566,48 @@
 }
 
 
+//checkbox  and radio
+
+input {
+
+  &[type="checkbox"]{
+
+    display: none;
+
+    & + label {
+     font-size: 14px;
+     color: $black;
+     cursor: pointer;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $lightGrey;
+        background-color: #fff;
+        margin-right: 16px;
+      }
+    }
+  }
+
+
+  &:checked{
+    & + label{
+      &::before{
+        background: $green url("../img/checkbox-bg.png") no-repeat center;
+      }
+    }
+  }
+
+  &[type="radio"]{
+
+    display: none;
+  }
+
+}
+
+
 //checkbox wrap
 
 .checkbox-wrap{
@@ -582,6 +624,10 @@
       &:hover{
         background-color: $xsLightGrey;
       }
+
+      .icon{
+        margin-left: auto;
+      }
     }
   }
 }
@@ -592,4 +638,5 @@
   .checkbox-group{
     width: 33.3333%;
   }
+
 }
