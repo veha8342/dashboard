@@ -89,5 +89,9 @@ $( function() {
 
        $('#choose-company, #choose-flag').styler()
 
+    //scrollbar init
+
+    $('.scrollbar-rail').scrollbar();
+
 });
 
