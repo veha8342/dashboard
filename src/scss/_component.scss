@@ -563,6 +563,11 @@
       }
     }
   }
+
+  .modal-footer{
+    padding: $indent;
+    border-top: 1px solid $lightGrey;
+  }
 }
 
 
@@ -571,7 +576,6 @@
 input {
 
   &[type="checkbox"]{
-
     display: none;
 
     & + label {
@@ -604,7 +608,6 @@ input {
 
     display: none;
   }
-
 }
 
 
@@ -615,11 +618,15 @@ input {
 
   .checkboxes{
     padding-top: 30px;
-    height: 150px;
-    flex-wrap: wrap;
+
+    .scrollbar-inner{
+      height: 150px;
+      flex-wrap: wrap;
+    }
 
     .checkbox-group{
       padding: 12px;
+      margin-right: 18px;
 
       &:hover{
         background-color: $xsLightGrey;
@@ -636,7 +643,7 @@ input {
   width: 1075px;
 
   .checkbox-group{
-    width: 33.3333%;
+    width: 30%;
   }
 
-}п
+}

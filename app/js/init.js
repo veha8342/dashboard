@@ -91,7 +91,7 @@ $( function() {
 
     //scrollbar init
 
-    $('.scrollbar-rail').scrollbar();
+    $('.scrollbar-inner').scrollbar();
 
 });
 
