@@ -20,3 +20,11 @@ main{
 .links {
   margin: $indent 0;
 }
+
+.generate-links-form{
+
+  .form-control{
+    flex-grow: 1;
+    margin-right: 16px;
+  }
+}

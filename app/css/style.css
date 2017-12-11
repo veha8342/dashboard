@@ -1747,3 +1747,10 @@ main {
 
 .links {
   margin: 18px 0; }
+
+.generate-links-form .form-control {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 16px; }
