@@ -551,6 +551,8 @@
 
     .filtres{
 
+      padding: 30px 0;
+
       select{
         display: none;
       }
@@ -622,6 +624,12 @@ input {
     .scrollbar-inner{
       height: 150px;
       flex-wrap: wrap;
+    }
+
+
+    .scrollbar-inner{
+      flex-wrap: wrap;
+
     }
 
     .checkbox-group{

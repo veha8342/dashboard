@@ -421,13 +421,15 @@ input {
     padding: 18px; }
   .modal .modal-body {
     padding: 0 18px; }
-    .modal .modal-body .filtres select {
-      display: none; }
-    .modal .modal-body .filtres .modal-form {
-      width: 435px;
-      height: 40px;
-      padding-left: 15px;
-      border: 1px solid #e3e3e3; }
+    .modal .modal-body .filtres {
+      padding: 30px 0; }
+      .modal .modal-body .filtres select {
+        display: none; }
+      .modal .modal-body .filtres .modal-form {
+        width: 435px;
+        height: 40px;
+        padding-left: 15px;
+        border: 1px solid #e3e3e3; }
   .modal .modal-footer {
     padding: 18px;
     border-top: 1px solid #e3e3e3; }
@@ -459,6 +461,10 @@ input[type="radio"] {
     padding-top: 30px; }
     .checkbox-wrap .checkboxes .scrollbar-inner {
       height: 150px;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+    .checkbox-wrap .checkboxes .scrollbar-inner {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
