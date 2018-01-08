@@ -209,6 +209,9 @@
 	font-family: $fontFamily;
 	/*color: #333;*/
 	/*text-shadow: 1px 1px #FFF;*/
+	margin-left: 16px;
+
+
 }
 
 .jq-selectbox__select:hover {
@@ -243,6 +246,7 @@
 	right: 18px;
 	width: 34px;
 	height: 100%;
+	background: url(".");
 	//border-left: 1px solid #CCC;
 }
 .jq-selectbox__trigger-arrow{
@@ -256,6 +260,14 @@
 	//border-top: 5px solid #999;
 	//border-right: 5px solid transparent;
 	//border-left: 5px solid transparent;
+	display: flex;
+}
+
+.jq-selectbox__trigger-arrow::before{
+	font-family: "app-ic";
+	content: "\EA02";
+	display: flex;
+	align-items: center;
 }
 .jq-selectbox:hover .jq-selectbox__trigger-arrow {
 	border-top-color: #000;
