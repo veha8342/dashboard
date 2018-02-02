@@ -16,6 +16,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
     async        = require('async');
 
 
+
 gulp.task('iconfont', function(done){
 
     var iconStream = gulp.src(['src/icons/*.svg'])

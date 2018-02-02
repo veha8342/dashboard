@@ -25,6 +25,12 @@
     "gulp-uglifyjs": "^0.6.2",
     "gulp.spritesmith": "^6.5.1",
     "imagemin-pngquant": "^5.0.1",
+    "lodash": "^4.17.4",
     "merge-stream": "^1.0.1"
+  },
+  "dependencies": {
+    "gulp-svg-symbols": "github:hiswe/gulp-svg-symbols",
+    "install": "^0.10.4",
+    "npm": "^5.6.0"
   }
 }

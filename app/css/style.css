@@ -87,7 +87,6 @@ button, input[type="submit"] {
 .section-title, .page-title {
   font-size: 16px;
   color: #a6a6a6;
-  text-transform: uppercase;
   font-weight: 700; }
 
 .page-title {
@@ -107,7 +106,7 @@ button, input[type="submit"] {
   padding: 18px; }
 
 .btn {
-  font-size: 13px;
+  font-size: 18px;
   padding: 13px 22px;
   color: #fff;
   -webkit-border-radius: 2px;
@@ -135,6 +134,8 @@ button, input[type="submit"] {
   font-size: 13px; }
   .table.full-width {
     width: 100%; }
+  .table tbody tr:hover {
+    background-color: #f1f3f3; }
   .table tbody tr:last-child td {
     border-bottom: 1px solid #e3e3e3; }
   .table tbody tr:hover {
@@ -185,7 +186,7 @@ button, input[type="submit"] {
     top: 19px;
     right: 0; }
   .user-control a {
-    margin-right: 20px; }
+    margin-right: 30px; }
   .user-control span {
     margin-right: 20px; }
   .user-control:last-child span {
@@ -217,7 +218,9 @@ button, input[type="submit"] {
   font-size: 13px;
   background-color: #fff;
   cursor: pointer; }
-  .color-tab.tab-default:hover {
+  .color-tab.tab-active {
+    background-color: #f3f3f1; }
+  .color-tab:hover {
     background-color: #f3f3f1; }
   .color-tab .circle {
     width: 17px;
@@ -372,19 +375,34 @@ button, input[type="submit"] {
 textarea {
   border: 1px solid #e3e3e3;
   padding: 18px 0 50px 18px; }
+  textarea:focus {
+    border: 1px solid #333333; }
 
 input {
   -webkit-border-radius: 2px;
           border-radius: 2px;
   font-size: 14px;
   font-family: "Roboto", sans-serif; }
-  input.warning {
-    border: 2px solid #ff0000; }
-    input.warning:hover {
+  input:focus {
+    border: 1px solid #333333; }
+  input:disabled {
+    border: 2px solid #ff0000;
+    background-color: #f5f5f2; }
+    input:disabled:hover {
+      cursor: not-allowed; }
+  input.invalid {
+    border: 2px solid #ff0000;
+    background-color: #f5f5f2; }
+    input.invalid:hover {
       cursor: not-allowed; }
   input:hover {
     cursor: pointer;
     color: #333333; }
+  input[type="password"]:before {
+    font-family: "app-ic";
+    content: "\EA02";
+    color: red;
+    font-size: 10px; }
 
 .chart-wrap {
   padding-bottom: 30px; }
