@@ -398,11 +398,8 @@ input {
   input:hover {
     cursor: pointer;
     color: #333333; }
-  input[type="password"]:before {
-    font-family: "app-ic";
-    content: "\EA02";
-    color: red;
-    font-size: 10px; }
+  input input[type=password] {
+    background: url("../../app/img/password.svg"); }
 
 .chart-wrap {
   padding-bottom: 30px; }

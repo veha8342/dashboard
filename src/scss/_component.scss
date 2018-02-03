@@ -539,13 +539,13 @@
         color: $black;
       }
 
-          &[type="password"]:before{
+          input[type=password]{
 
-
-        font-family: "app-ic";
-        content: "\EA02";
-        color: red;
-            font-size: 10px;
+          background: url("../../app/img/password.svg");
+        //font-family: "app-ic";
+        //content: "\EA11";
+        //color: red;
+        //    font-size: 10px;
     }
 
     }
