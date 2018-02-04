@@ -33,8 +33,15 @@
 
   .small-title{
     font-size: $smallTitleFontSize;
+
   }
 }
+
+.list-title{
+  @extend %title;
+}
+
+
 
 //Links component
 
@@ -52,9 +59,11 @@
 }
 
 //Button
+
 .btn-row{
   padding: $indent;
 }
+
 .btn{
   font-size: $btnFontSize;
   padding: 13px 22px;
@@ -162,18 +171,21 @@
 
 
 .user-control{
-  display: flex;
-  align-items: center;
+  
   color: $darkGrey;
   padding: 21px 0 21px 20px;
   border-left: 1px solid $lightGrey;
+
+  &:nth-child(1){
+    font-size: 20px;
+  }
   
   &:nth-child(2){
     position: relative;
   }
 
   .icon{
-    font-size: 15px;
+    font-size: 18px;
     
     &.icon-notification{
       position: relative;
@@ -238,37 +250,55 @@
 }
 
 // color tabs
-.color-tab{
-  padding: 12px 19px 12px 8px;
-  border-radius: 2px;
-  display: inline-block;
-  font-size: $tableFontSize;
-  background-color: $tabDefColor;
-  cursor: pointer;
+.color-tab-wrap{
 
-  &.tab-active{
-    background-color: $greyTabBg;
+    margin-bottom: 75px;
+
+  .tab-wrap-title{
+
+    padding-bottom: 40px;
   }
 
-    &:hover{
+  .tab-wrap{
+    .color-tab{
+      padding: 12px 19px 12px 8px;
+      border-radius: 2px;
+      //display: inline-block;
+      font-size: $tableFontSize;
+      background-color: $tabDefColor;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
 
-      background-color: $greyTabBg;
+
+      &.tab-active{
+        background-color: $greyTabBg;
+      }
+
+      &:hover{
+
+        background-color: $greyTabBg;
+      }
+
+
+      .circle{
+        width: 17px;
+        height: 17px;
+        background-color: $greenTabBg;
+        margin-right: 13px;
+      }
+
+      span{
+        font-size: $tableFontSize;
+      }
+
+      & + .color-tab{
+        margin-left: 42px;
+      }
     }
-
-
-  .circle{
-    width: 17px;
-    height: 17px;
-    background-color: $greenTabBg;
-    margin-right: 13px;
   }
 
-  span{
-    font-size: $tableFontSize;
-  }
 }
-
-
 
 .container-sm{
   max-width: 684px;
@@ -283,14 +313,17 @@
 }
 
 //container
+
 .container-fluid{
   padding: $indent;
 }
+
 .container-fluid-header{
   padding: 0 $indent;
 }
 
 //HEADER
+
 .header{
   background-color: #fff;
   border-bottom: 1px solid $lightGrey;
@@ -298,7 +331,10 @@
   left: 0;
 }
 
-//aside
+//HEADER END
+
+//ASIDE START
+
 %activeLink{
   background-color: #282828;
   color: #fff;
@@ -440,7 +476,7 @@
   }
 
 .panel-date {
-  padding: 30px 0;
+  padding: 34px 0;
   border-bottom: 1px solid $lightGrey;
 }
 
@@ -450,13 +486,15 @@
 
     .btn
     {
-      vertical-align: middle;
       margin-left: 13px;
-      padding: 12px 20px;
-
+      padding: 11px 20px;
       .icon-refresh{
-        font-size: 12px;
+        font-size: 15px;
     }
+    }
+
+    input:focus{
+      border: none;
     }
   }
 
@@ -502,6 +540,7 @@
       &:focus{
         border: 1px solid $black;
       }
+
     }
 
     input{
@@ -539,21 +578,17 @@
         color: $black;
       }
 
-          input[type=password]{
+         &[type=password]{
 
-          background: url("../../app/img/password.svg");
-        //font-family: "app-ic";
-        //content: "\EA11";
-        //color: red;
-        //    font-size: 10px;
-    }
+           background: url("../../app/img/password.svg") no-repeat;
+         }
 
     }
 
 
 //chart wrap
 .chart-wrap{
-  padding-bottom: 30px;
+  padding-bottom: 75px;
 
   .chart-statistics{
     display: flex;
@@ -567,14 +602,14 @@
      li{
        display: flex;
        justify-content: space-between;
-      border-bottom: $border;
+       border-bottom: $border;
+       padding-bottom: 9px;
 
        & + li{
          margin-top: 25px;
        }
     }
   }
-
 
 }
 
@@ -704,4 +739,8 @@ input {
     width: 30%;
   }
 
+}
+
+canvas{
+  padding-bottom: 55px;
 }

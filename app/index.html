@@ -1,4 +1,4 @@
-npm <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -23,20 +23,20 @@ npm <!DOCTYPE html>
     <!--HEADER START-->
     <header class="fixed-to-top header">
         <div class="flex-container container-fluid-header text-end">
-            <div class="user-control">
+            <div class="user-control flex-container align-items-center">
                 <span class="icon icon-wallet"></span>
-                <span class="page-title">1500</span>
+                <span class="page-title">$1,500,00</span>
                 <span class="icon icon-arrow-down" ></span>
             </div>
-            <div class="user-control">
+            <div class="user-control flex-container align-items-center">
                 <span class="icon icon-notification"></span>
                 <span class="circle"></span>
             </div>
-            <div class="user-control">
+            <div class="user-control flex-container align-items-center">
                 <span class="icon icon-profile"></span>
                 <a href="#" class="link">Leonardo dicaprio</a>
             </div>
-            <div class="user-control">
+            <div class="user-control flex-container align-items-center">
                 <span class="icon icon-quit"></span>
             </div>
         </div>
@@ -44,7 +44,7 @@ npm <!DOCTYPE html>
     <!--HEADER END-->
     <!--ASIDE START-->
     <aside class="aside fixed-to-top">
-        <div class="menu-control flex-container align-items-center justify-contenet-sb">
+        <div class="menu-control flex-container align-items-center justify-content-sb">
             <div class="logo">
                 <a href="#">
                     <img src="img/logo.png" alt="">
@@ -67,8 +67,8 @@ npm <!DOCTYPE html>
                 <li><a href="#"><span class="icon icon-postback"></span>Postback</a></li>
             </ul>
             <div class="your-manager">
-                <h3 class="section-title page-title">Your manager</h3>
-                <div class="manager-info flex-container align-items-center">
+                <h3 class="page-title small-title">Your manager</h3>
+                <d iv class="manager-info flex-container align-items-center">
                     <div class="manager-photo">
                         <img src="img/manager-img.png" alt="">
                         <div class="circle online"></div>
@@ -85,10 +85,10 @@ npm <!DOCTYPE html>
         <div class="content-wrapper">
             <div class="panel">
                 <div class="panel-header">
-                    <h3 class="page-title links">General statistic</h3>
+                    <h3 class="page-title">General statistic</h3>
                 </div>
-                <div class="panel-date text-center">
-                    <form class="datepicker-form">
+                <div class="panel-date">
+                    <form class="datepicker-form  flex-container flex-center">
                         <div class="date-input-wrap">
                             <input type="text" id="from" name="from" class="date-control">
                             <input type="text" id="to" name="to" class="date-control">
@@ -122,9 +122,13 @@ npm <!DOCTYPE html>
                                         <span class="count">445</span>
                                     </li>
                                 </ul>
-
                             </div>
-                            <div class="guide-wrap text-center">
+                            </div>
+                        <div class="color-tab-wrap">
+                            <div class="tab-wrap-title">
+                                <h3 class="list-title">Earnings chart</h3>
+                            </div>
+                            <div class="tab-wrap flex-container flex-center">
                                 <div class="color-tab tab-default">
                                     <span class="circle"></span>
                                     <span>color tab</span>
@@ -138,18 +142,21 @@ npm <!DOCTYPE html>
                                     <span>color tab</span>
                                 </div>
                             </div>
+                        </div>
 
                             <canvas id="myChart" width="400" height="400"></canvas>
 
-                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="panel">
+                <div class="panel-header">
+                    <h3 class="page-title">Links</h3>
+                </div>
                 <div class="panel-body">
                     <div class="btn-row links text-center">
-                        <a href="#" class="btn btn-action" data-modal="#add-links-modal">add new</a>
+                        <a href="#" class="btn btn-action" data-modal="#add-links-modal"> add new</a>
                     </div>
                     <div class="container-sm">
                         <table class="table full-width">

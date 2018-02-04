@@ -43,6 +43,12 @@ button, input[type="submit"] {
 .text-center {
   text-align: center; }
 
+.flex-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .text-left {
   text-align: left; }
 
@@ -69,7 +75,7 @@ button, input[type="submit"] {
       -ms-flex-align: center;
           align-items: center; }
 
-.justify-contenet-sb {
+.justify-content-sb {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -84,7 +90,7 @@ button, input[type="submit"] {
   .circle.offline {
     background-color: #ff0000; }
 
-.section-title, .page-title {
+.section-title, .page-title, .list-title {
   font-size: 16px;
   color: #a6a6a6;
   font-weight: 700; }
@@ -161,21 +167,15 @@ button, input[type="submit"] {
       color: #bababa; }
 
 .user-control {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #979797;
   padding: 21px 0 21px 20px;
   border-left: 1px solid #e3e3e3; }
+  .user-control:nth-child(1) {
+    font-size: 20px; }
   .user-control:nth-child(2) {
     position: relative; }
   .user-control .icon {
-    font-size: 15px; }
+    font-size: 18px; }
     .user-control .icon.icon-notification {
       position: relative; }
   .user-control .circle {
@@ -210,25 +210,38 @@ button, input[type="submit"] {
         .pagination li a.icon:hover {
           background-color: #fff; }
 
-.color-tab {
-  padding: 12px 19px 12px 8px;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  display: inline-block;
-  font-size: 13px;
-  background-color: #fff;
-  cursor: pointer; }
-  .color-tab.tab-active {
-    background-color: #f3f3f1; }
-  .color-tab:hover {
-    background-color: #f3f3f1; }
-  .color-tab .circle {
-    width: 17px;
-    height: 17px;
-    background-color: #80bfca;
-    margin-right: 13px; }
-  .color-tab span {
-    font-size: 13px; }
+.color-tab-wrap {
+  margin-bottom: 75px; }
+  .color-tab-wrap .tab-wrap-title {
+    padding-bottom: 40px; }
+  .color-tab-wrap .tab-wrap .color-tab {
+    padding: 12px 19px 12px 8px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    font-size: 13px;
+    background-color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .color-tab-wrap .tab-wrap .color-tab.tab-active {
+      background-color: #f3f3f1; }
+    .color-tab-wrap .tab-wrap .color-tab:hover {
+      background-color: #f3f3f1; }
+    .color-tab-wrap .tab-wrap .color-tab .circle {
+      width: 17px;
+      height: 17px;
+      background-color: #80bfca;
+      margin-right: 13px; }
+    .color-tab-wrap .tab-wrap .color-tab span {
+      font-size: 13px; }
+    .color-tab-wrap .tab-wrap .color-tab + .color-tab {
+      margin-left: 42px; }
 
 .container-sm {
   max-width: 684px;
@@ -329,15 +342,17 @@ button, input[type="submit"] {
         width: 310px; }
 
 .panel-date {
-  padding: 30px 0;
+  padding: 34px 0;
   border-bottom: 1px solid #e3e3e3; }
 
 .datepicker-form .btn {
-  vertical-align: middle;
   margin-left: 13px;
-  padding: 12px 20px; }
+  padding: 11px 20px; }
   .datepicker-form .btn .icon-refresh {
-    font-size: 12px; }
+    font-size: 15px; }
+
+.datepicker-form input:focus {
+  border: none; }
 
 .date-input-wrap {
   padding: 4px 0;
@@ -398,11 +413,11 @@ input {
   input:hover {
     cursor: pointer;
     color: #333333; }
-  input input[type=password] {
-    background: url("../../app/img/password.svg"); }
+  input[type=password] {
+    background: url("../../app/img/password.svg") no-repeat; }
 
 .chart-wrap {
-  padding-bottom: 30px; }
+  padding-bottom: 75px; }
   .chart-wrap .chart-statistics {
     display: -webkit-box;
     display: -webkit-flex;
@@ -424,7 +439,8 @@ input {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      border-bottom: 1px solid #e3e3e3; }
+      border-bottom: 1px solid #e3e3e3;
+      padding-bottom: 9px; }
       .chart-wrap .chart-statistics li + li {
         margin-top: 25px; }
 
@@ -502,6 +518,9 @@ input[type="radio"] {
   width: 1075px; }
   #add-links-modal .checkbox-group {
     width: 30%; }
+
+canvas {
+  padding-bottom: 55px; }
 
 .jq-checkbox,
 .jq-radio {
@@ -1791,7 +1810,7 @@ main {
   padding-left: 188px;
   padding-top: 60px; }
 
-.links {
+.links .table {
   margin: 18px 0; }
 
 .generate-links-form .form-control {
