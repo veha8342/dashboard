@@ -142,18 +142,21 @@
     border-radius: 2px;
     cursor: pointer;
 
+    //&:not(:last-child){
+    //  width: 30%;
+    //}
+
     &:hover{
       background-color: $xsLightGrey;
       color: $black;
     }
   }
   tr{
-    
-
 
     th{
       padding: 30px 18px;
       color: $grey;
+      width: 30%;
     }
 
     td{
@@ -171,7 +174,7 @@
 
 
 .user-control{
-  
+
   color: $darkGrey;
   padding: 21px 0 21px 20px;
   border-left: 1px solid $lightGrey;
@@ -634,9 +637,10 @@
     padding: 0 $indent;
 
     .filtres{
-      border-bottom: 1px solid $lightGrey;
-      padding: 30px 0;
+      border-bottom: 1px solid #e3e3e3;
+      padding: 16px 18px 28px;
       margin-bottom: 30px;
+      margin: 0 -18px;
 
       select{
         display: none;
@@ -701,10 +705,14 @@ input {
 //checkbox wrap
 
 .checkbox-wrap{
-  padding: 30px 0;
+  padding: 25px 0;
 
   .checkboxes{
     padding-top: 30px;
+
+    h3{
+      margin-bottom: 37px
+    }
 
     .scrollbar-inner{
       height: 150px;
