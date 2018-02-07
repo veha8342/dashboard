@@ -158,8 +158,7 @@ button, input[type="submit"] {
       color: #333333; }
   .table tr th {
     padding: 30px 18px;
-    color: #bababa;
-    width: 30%; }
+    color: #bababa; }
   .table tr td {
     padding: 18px;
     border-top: 1px solid #e3e3e3; }
