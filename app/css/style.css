@@ -417,7 +417,7 @@ input {
     background: url("../../app/img/password.svg") no-repeat; }
 
 .chart-wrap {
-  padding-bottom: 75px; }
+  padding-bottom: 35px; }
   .chart-wrap .chart-statistics {
     display: -webkit-box;
     display: -webkit-flex;
