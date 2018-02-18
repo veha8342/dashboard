@@ -38,4 +38,8 @@ textarea{
 }
 button, input[type="submit"]{
   cursor:pointer;
+  border: none;
+}
+select{
+  display: none;
 }

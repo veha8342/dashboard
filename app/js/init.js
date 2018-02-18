@@ -87,7 +87,7 @@ $( function() {
 
     //formstyler
 
-       $('#choose-company, #choose-flag').styler()
+       $('#choose-company, #choose-flag, #weight-height, #design, #file-type').styler()
 
     //scrollbar init
 

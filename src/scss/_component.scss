@@ -66,11 +66,13 @@
 
 .btn{
   font-size: $btnFontSize;
-  padding: 13px 22px;
+  padding: 10px 22px;
   color: $btnDefaultColor;
   border-radius: 2px;
   display: inline-block;
   cursor: pointer;
+  line-height: 1;
+
 
   & + .btn{
     margin-left: $indent;
@@ -137,8 +139,7 @@
 
   .table-sort{
     color: $grey;
-    padding: 8px 10px;
-    margin: -8px -10px;
+    padding: 38px 0 15px 20px;
     border-radius: 2px;
     cursor: pointer;
 
@@ -146,9 +147,12 @@
     //  width: 30%;
     //}
 
-    &:hover{
+    & span:hover{
+      padding: 2px 5px;
+      margin-left: -5px;
       background-color: $xsLightGrey;
       color: $black;
+      //margin: 0 0 0 -2px;
     }
   }
   tr{
@@ -524,7 +528,6 @@
     height: 40px;
     padding: $paddingForm;
 
-
   }
 
   //label group
@@ -641,22 +644,37 @@
       margin-bottom: 30px;
       margin: 0 -18px;
 
-      select{
-        display: none;
+      input{
+        margin-right: 16px;
       }
 
-      .modal-form{
-        width: 435px;
-        height: 40px;
-        padding-left: 15px;
-        border: 1px solid $lightGrey;
+      .scheme-name{
+        margin-bottom: 38px;
       }
+
+      input{
+        flex-grow: 1;
+      }
+
+      //.modal-form{
+      //  width: 435px;
+      //  padding-left: 15px;
+      //  border: 1px solid $lightGrey;
+      //}
     }
   }
 
   .modal-footer{
     padding: $indent;
     border-top: 1px solid $lightGrey;
+
+    .generate-links-form{
+
+      placeholder{
+        color: $lightGrey;
+
+      }
+    }
   }
 }
 
@@ -708,6 +726,7 @@ input {
 
   .checkboxes{
     padding-top: 30px;
+    flex-grow: 1;
 
     h3{
       margin-bottom: 37px
@@ -744,6 +763,18 @@ input {
 
   .checkbox-group{
     width: 30%;
+  }
+
+}
+
+#add-banners-modal {
+  width: 1075px;
+
+  .scheme-name{
+      input{
+        flex-grow: 1;
+      }
+
   }
 
 }
