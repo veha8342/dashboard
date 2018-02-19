@@ -644,6 +644,10 @@
       margin-bottom: 30px;
       margin: 0 -18px;
 
+      .Language{
+        flex-grow: 0.3;
+      }
+
       input{
         margin-right: 16px;
       }

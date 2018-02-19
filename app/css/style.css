@@ -85,6 +85,12 @@ select {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.flex-end {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
 .circle {
   display: inline-block;
   -webkit-border-radius: 50%;
@@ -468,6 +474,11 @@ input {
       padding: 16px 18px 28px;
       margin-bottom: 30px;
       margin: 0 -18px; }
+      .modal .modal-body .filtres .Language {
+        -webkit-box-flex: 0.3;
+        -webkit-flex-grow: 0.3;
+            -ms-flex-positive: 0.3;
+                flex-grow: 0.3; }
       .modal .modal-body .filtres input {
         margin-right: 16px; }
       .modal .modal-body .filtres .scheme-name {
