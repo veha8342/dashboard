@@ -480,8 +480,6 @@ input {
   .modal .modal-footer {
     padding: 18px;
     border-top: 1px solid #e3e3e3; }
-    .modal .modal-footer .generate-links-form placeholder {
-      color: #e3e3e3; }
 
 input[type="checkbox"] {
   display: none; }
@@ -786,6 +784,9 @@ canvas {
   -webkit-flex-grow: 0.3;
       -ms-flex-positive: 0.3;
           flex-grow: 0.3; }
+
+.modal-select {
+  position: relative; }
 
 .jq-selectbox__select {
   position: relative;
