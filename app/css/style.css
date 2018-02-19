@@ -785,11 +785,7 @@ canvas {
   -webkit-box-flex: 0.3;
   -webkit-flex-grow: 0.3;
       -ms-flex-positive: 0.3;
-          flex-grow: 0.3;
-  position: relative; }
-
-#choose-company-styler, #weight-height-styler, #design-styler, #file-type-styler {
-  position: relative; }
+          flex-grow: 0.3; }
 
 .jq-selectbox__select {
   position: relative;
