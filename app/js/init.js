@@ -72,6 +72,18 @@ $( function() {
     }
 
     //modal init
+
+    // не универсальный вызов модального окна
+
+    /*var modalBtn = $('.links .btn');
+
+    modalBtn.on('click', function(event) {
+        event.preventDefault();
+        $('.modal').bPopup();
+    });
+    */
+        // универсальный вызов модальных окон по атрибуту в данной ситуации ID модального окна
+
     var modalBtns = $('[data-modal]');
 
     modalBtns.on('click', function (event) {

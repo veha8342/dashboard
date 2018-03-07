@@ -730,7 +730,7 @@ input {
     }
 
     .scrollbar-inner{
-      height: 150px;
+      height: 200px;
       flex-wrap: wrap;
     }
 
@@ -748,8 +748,19 @@ input {
         background-color: $xsLightGrey;
       }
 
+      &:hover .icon{
+        display: block;
+      }
+
+
+      //span{
+      //  display: none;
+      //
+      //}
+
       .icon{
         margin-left: auto;
+        display: none;
       }
     }
   }
@@ -787,8 +798,6 @@ input {
       flex-grow: 0.2;
     }
   }
-
-
 
 }
 
