@@ -790,11 +790,11 @@ canvas {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-#choose-flag-styler {
-  -webkit-box-flex: 0.3;
-  -webkit-flex-grow: 0.3;
-      -ms-flex-positive: 0.3;
-          flex-grow: 0.3; }
+#choose-company-styler .jq-selectbox__dropdown {
+  width: 96%; }
+
+#choose-flag-styler .jq-selectbox__dropdown {
+  width: 88%; }
 
 .modal-select {
   position: relative; }
@@ -866,9 +866,11 @@ canvas {
   border-top-color: #AAA; }
 
 .jq-selectbox__dropdown {
+  top: 36px;
+  left: -15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 97%;
+  width: 95%;
   margin: 5px 16px 0;
   padding: 0;
   border: 1px solid #CCC;

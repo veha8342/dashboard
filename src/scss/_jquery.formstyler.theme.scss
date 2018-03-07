@@ -195,8 +195,12 @@
 		flex-grow: 1
 	}
 
-#choose-flag-styler{
-	flex-grow: 0.3;
+#choose-company-styler .jq-selectbox__dropdown{
+	width: 96%;
+}
+
+#choose-flag-styler .jq-selectbox__dropdown{
+	width: 88%;
 }
 
 .modal-select{
@@ -290,8 +294,10 @@
 	border-top-color: #AAA;
 }
 .jq-selectbox__dropdown {
+	top: 36px;
+	left: -15px;
 	box-sizing: border-box;
-	width: 97%;
+	width: 95%;
 	margin: 5px 16px 0;
 	padding: 0;
 	border: 1px solid #CCC;
