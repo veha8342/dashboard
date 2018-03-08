@@ -676,17 +676,17 @@
 }
 
 
-//checkbox  and radio
+//checkbox  and radio btn
 
 input {
 
-  &[type="checkbox"]{
+  &[type="checkbox"] {
     display: none;
 
     & + label {
-     font-size: 14px;
-     color: $black;
-     cursor: pointer;
+      font-size: 14px;
+      color: $black;
+      cursor: pointer;
 
       &::before {
         content: '';
@@ -698,24 +698,22 @@ input {
         margin-right: 16px;
       }
     }
-  }
 
-
-  &:checked{
-    & + label{
-      &::before{
-        background: $green url("../img/checkbox-bg.png") no-repeat center;
+    &:checked {
+      & + label {
+        &::before {
+          background: $green url("../img/checkbox-bg.png") no-repeat center;
+        }
       }
+    }
+
+    &[type="radio"] {
+
+      display: none;
     }
   }
 
-  &[type="radio"]{
-
-    display: none;
-  }
 }
-
-
 //checkbox wrap
 
 .checkbox-wrap{
@@ -732,6 +730,7 @@ input {
     .scrollbar-inner{
       height: 200px;
       flex-wrap: wrap;
+      padding-right: 20px;
     }
 
 

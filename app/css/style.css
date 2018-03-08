@@ -506,12 +506,10 @@ input[type="checkbox"] {
       border: 1px solid #e3e3e3;
       background-color: #fff;
       margin-right: 16px; }
-
-input:checked + label::before {
-  background: #04ae00 url("../img/checkbox-bg.png") no-repeat center; }
-
-input[type="radio"] {
-  display: none; }
+  input[type="checkbox"]:checked + label::before {
+    background: #04ae00 url("../img/checkbox-bg.png") no-repeat center; }
+  input[type="checkbox"][type="radio"] {
+    display: none; }
 
 .checkbox-wrap {
   padding: 25px 0; }
@@ -527,7 +525,8 @@ input[type="radio"] {
       height: 200px;
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
+              flex-wrap: wrap;
+      padding-right: 20px; }
     .checkbox-wrap .checkboxes .scrollbar-inner {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
