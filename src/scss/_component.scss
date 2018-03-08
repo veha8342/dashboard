@@ -786,6 +786,10 @@ input {
 
     .scheme-input{
       flex-grow: 1;
+
+      input{
+        width: 96%;
+      }
     }
 
     .choose-company{
