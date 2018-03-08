@@ -748,7 +748,7 @@ input {
       }
 
       &:hover .icon{
-        display: block;
+        color: $blue;
       }
 
 
@@ -759,7 +759,7 @@ input {
 
       .icon{
         margin-left: auto;
-        display: none;
+        color: transparent;
       }
     }
   }
@@ -781,8 +781,6 @@ input {
     &>div{
       flex-grow: 1;
     }
-
-    flex-grow: 1;
 
     .scheme-input{
       flex-grow: 1;
