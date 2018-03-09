@@ -193,27 +193,17 @@
 .jq-selectbox{
 
 	flex-grow: 1
+
 }
 
-#choose-company-styler .jq-selectbox__dropdown{
-	width: 96%;
+.jq-selectbox +  .jq-selectbox{
+	margin-left: 16px;
 }
 
-#choose-flag-styler .jq-selectbox__dropdown{
-	width: 88%;
-}
 
 .modal-select{
 	position: relative;
 }
-
-
-//.weight-height{
-//   #id{
-//     position: relative;
-//  }
-//}
-
 
 .jq-selectbox__select {
   position: relative;
@@ -226,10 +216,10 @@
 	font-family: $fontFamily;
 	/*color: #333;*/
 	/*text-shadow: 1px 1px #FFF;*/
-  margin-right: 16px;
-
 
 }
+
+
 
 .jq-selectbox__select:hover {
 	//background: linear-gradient(#F6F6F6, #E6E6E6);
@@ -257,6 +247,7 @@
 	font-family: $fontFamily;
 	//padding: $paddingForm;
 }
+
 .jq-selectbox__trigger {
 
 	position: absolute;
@@ -297,7 +288,7 @@
 	top: 36px;
 	left: -15px;
 	box-sizing: border-box;
-	width: 95%;
+	width: 100%;
 	margin: 5px 16px 0;
 	padding: 0;
 	border: 1px solid #CCC;

@@ -482,11 +482,12 @@ input {
         -webkit-box-flex: 0.3;
         -webkit-flex-grow: 0.3;
             -ms-flex-positive: 0.3;
-                flex-grow: 0.3; }
+                flex-grow: 0.3;
+        margin-left: 16px; }
         .modal .modal-body .filtres .Language .country-flag-fr {
           background-image: url("../img/flag.png");
           background-repeat: no-repeat;
-          paddnig: 2px 5px; }
+          background-position: 15px 10px; }
       .modal .modal-body .filtres input {
         margin-right: 16px; }
       .modal .modal-body .filtres .scheme-name {
@@ -832,11 +833,8 @@ canvas {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-#choose-company-styler .jq-selectbox__dropdown {
-  width: 96%; }
-
-#choose-flag-styler .jq-selectbox__dropdown {
-  width: 88%; }
+.jq-selectbox + .jq-selectbox {
+  margin-left: 16px; }
 
 .modal-select {
   position: relative; }
@@ -851,8 +849,7 @@ canvas {
   /*box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);*/
   font-family: "Roboto", sans-serif;
   /*color: #333;*/
-  /*text-shadow: 1px 1px #FFF;*/
-  margin-right: 16px; }
+  /*text-shadow: 1px 1px #FFF;*/ }
 
 .jq-selectbox.disabled .jq-selectbox__select {
   border-color: #CCC;
@@ -912,7 +909,7 @@ canvas {
   left: -15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 95%;
+  width: 100%;
   margin: 5px 16px 0;
   padding: 0;
   border: 1px solid #CCC;

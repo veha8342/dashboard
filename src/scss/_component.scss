@@ -642,12 +642,12 @@
 
       .Language{
         flex-grow: 0.3;
+        margin-left: 16px;
 
         .country-flag-fr{
           background-image: url("../img/flag.png");
           background-repeat: no-repeat;
-          paddnig: 2px 5px;
-
+          background-position: 15px 10px;
         }
       }
 
@@ -781,9 +781,9 @@ input {
       margin-bottom: 14px;
     }
 
-    &>div{
-      flex-grow: 1;
-    }
+    & > div{
+        flex-grow: 1;
+      }
 
     .scheme-input{
       flex-grow: 1;
