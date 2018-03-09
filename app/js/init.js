@@ -99,7 +99,7 @@ $( function() {
 
     //formstyler
 
-       $('#choose-company, #choose-flag, #weight-height, #design, #file-type').styler()
+       $('#choose-company, #choose-flag, #weight-height, #design, #file-type , #postback-type, #to-countries, #send-options').styler()
 
     //scrollbar init
 
