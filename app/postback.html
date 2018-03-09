@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Postback</title>
+
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="css/myfont.css">
+
+
+    <!--JQUERY CSS-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<aside class="aside fixed-to-top">
+    <div class="menu-control flex-container align-items-center justify-content-sb">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="aside-menu">
+        <ul>
+            <li><a href="#"><span class="icon icon-general"></span>General</a></li>
+            <li><a href="#"><span class="icon icon-details"></span>Details</a></li>
+            <li><a href="#"><span class="icon icon-links"></span>Links</a></li>
+            <li><a href="#"><span class="icon icon-banners"></span>Banners</a></li>
+            <li><a href="#"><span class="icon icon-personaldata"></span>Personal data</a></li>
+            <li class="active"><a href="#"><span class="icon icon-payout"></span>Payout</a></li>
+            <li><a href="#"><span class="icon icon-postback"></span>Postback</a></li>
+        </ul>
+        <div class="your-manager">
+            <h3 class="section-title page-title">Your manager</h3>
+            <div class="manager-info flex-container align-items-center">
+                <div class="manager-photo">
+                    <img src="img/manager-img.png" alt="">
+                    <div class="circle online"></div>
+                </div>
+                <a href="#" class="link">Mikhael.E</a>
+            </div>
+        </div>
+    </div>
+
+</aside>
+<!--ASIDE END-->
+
+<main>
+    <div class="content-wrapper">
+        <div class="panel">
+            <div class="panel-header">
+                <h3 class="page-title">Payout history</h3>
+            </div>
+
+            <div class="panel-body">
+                <span>You can insert some parameters in this postback:</span>
+
+                <div class="signup-deposit flex-container justify-content-sb">
+                    <div class="signup flex-grow">
+                        <h3>Signup</h3>
+                        <textarea>crm_userId =%user_id%
+                            subid =%p%</textarea>
+                    </div>
+                    <div class="deposit flex-grow">
+                        <h3>Deposit</h3>
+                        <textarea>crm_userId =%user_id%
+                                subid =%p%</textarea>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+</main>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<!--INIT PLUGINS-->
+<script src="js/init.js"></script>
+
+</body>
+</html>
