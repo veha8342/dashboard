@@ -562,16 +562,16 @@
 
 						// подстраиваем ширину свернутого селекта в зависимости
 						// от ширины плейсхолдера или самого широкого пункта
-						if (divText.is('.placeholder') && (divText.width() > liWidthInner)) {
-							divText.width(divText.width());
-						} else {
+						// if (divText.is('.placeholder') && (divText.width() > liWidthInner)) {
+						// 	divText.width(divText.width());
+						// } else {
 							var selClone = selectbox.clone().appendTo('body').width('auto');
 							var selCloneWidth = selClone.outerWidth();
 							selClone.remove();
 							if (selCloneWidth == selectbox.outerWidth()) {
 								divText.width(liWidth);
 							}
-						}
+						//}
 
 						// подстраиваем ширину выпадающего списка в зависимости от самого широкого пункта
 						if (liWidthInner > selectbox.width()) dropdown.width(liWidthInner);
