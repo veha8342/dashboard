@@ -109,6 +109,7 @@
 .table{
   border-collapse: collapse;
   font-size: $tableFontSize;
+  cursor: pointer;
 
   &.full-width{
     width: 100%;
@@ -611,17 +612,21 @@
 
     .list{
       width: 40%;
-    }
 
-     li{
-       display: flex;
-       justify-content: space-between;
-       border-bottom: $formBorder;
-       padding-bottom: 9px;
+      li{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $formBorder;
+        padding-bottom: 9px;
 
-       & + li{
-         margin-top: 25px;
-       }
+        & + li{
+          margin-top: 25px;
+        }
+
+        & span.count{
+            font-weight: $fontMedium;
+        }
+      }
     }
   }
 

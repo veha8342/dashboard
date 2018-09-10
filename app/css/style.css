@@ -154,7 +154,8 @@ select {
 
 .table {
   border-collapse: collapse;
-  font-size: 13px; }
+  font-size: 13px;
+  cursor: pointer; }
   .table.full-width {
     width: 100%; }
   .table tbody tr:hover {
@@ -454,19 +455,21 @@ input {
     padding: 40px 0; }
     .chart-wrap .chart-statistics .list {
       width: 40%; }
-    .chart-wrap .chart-statistics li {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      border-bottom: #e3e3e3;
-      padding-bottom: 9px; }
-      .chart-wrap .chart-statistics li + li {
-        margin-top: 25px; }
+      .chart-wrap .chart-statistics .list li {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        border-bottom: 1px solid #e3e3e3;
+        padding-bottom: 9px; }
+        .chart-wrap .chart-statistics .list li + li {
+          margin-top: 25px; }
+        .chart-wrap .chart-statistics .list li span.count {
+          font-weight: 500; }
 
 .modal {
   background-color: #fff;
