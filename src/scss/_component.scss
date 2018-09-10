@@ -267,7 +267,7 @@
 
   .tab-wrap{
     .color-tab{
-      padding: 12px 19px 12px 8px;
+      padding: 12px 17px;
       border-radius: 2px;
       //display: inline-block;
       font-size: $tableFontSize;
@@ -524,9 +524,20 @@
 
     //default input
   .form-control{
-    border: $border;
+   border: 1px solid $formBorder;
     height: 40px;
     padding: $paddingForm;
+    cursor: pointer;
+    color: $defColText;
+    text-align: center;
+
+
+
+    &:hover{
+      border: 1px solid $formBordhover;
+    }
+
+
 
   }
 
@@ -582,6 +593,8 @@
          &[type=password]{
 
            background: url("../../app/img/password.svg") no-repeat;
+           background-size: 12px 21px;
+           background-position: 15px 10px ;
          }
 
     }
@@ -603,7 +616,7 @@
      li{
        display: flex;
        justify-content: space-between;
-       border-bottom: $border;
+       border-bottom: $formBorder;
        padding-bottom: 9px;
 
        & + li{
