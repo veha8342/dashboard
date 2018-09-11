@@ -525,20 +525,23 @@
 
     //default input
   .form-control{
-   border: 1px solid $formBorder;
+    border: 1px solid $formBorder;
     height: 40px;
     padding: $paddingForm;
     cursor: pointer;
-    color: $defColText;
+    color: $defFormColText;
     text-align: center;
-
 
 
     &:hover{
       border: 1px solid $formBordhover;
     }
 
+    &:focus{
+      border: 1px solid $formBorder;
+      color: $formBordhover;
 
+    }
 
   }
 
@@ -556,6 +559,7 @@
 
       &:focus{
         border: 1px solid $black;
+
       }
 
     }
@@ -566,18 +570,20 @@
       font-family: $fontFamily;
 
       &:disabled{
-        border: 2px solid $red;
+        border: 1px solid $red;
         background-color: $xsLightGrey;
 
 
         &:hover{
           cursor: not-allowed;
+          border: 1px solid $red;
+
         }
 
       }
 
       &.invalid{
-        border: 2px solid $red;
+        border: 1px solid $red;
         background-color: $xsLightGrey;
 
         &:hover{
@@ -585,11 +591,11 @@
         }
       }
 
-      &:hover{
-        //border: 1px solid $darkGrey;
-        cursor: pointer;
-        color: $black;
-      }
+      //&:hover{
+      //  //border: 1px solid $darkGrey;
+      //  cursor: pointer;
+      //  color: $formBordhover;
+      //}
 
          &[type=password]{
 
@@ -599,6 +605,46 @@
          }
 
     }
+
+
+    //Notification
+
+.notification{
+  display: inline-block;
+  padding: 12px 14px 12px 23px;
+  cursor: pointer;
+
+  .icon{
+    color: $notColorIcon;
+
+    &.icon-positive{
+      margin-right: 13px;
+    }
+
+    &.icon-close{
+      margin-left: 70px;
+    }
+  }
+
+
+  &.lightPositivNot{
+    background-color: $posNotifLightGreen;
+  }
+
+  &.greenPosNot{
+    background-color: $posNotifGreen;
+  }
+
+  &.lightRedNegNot{
+    background-color: $negNotifLightRed;
+  }
+
+  &.redNegNot{
+    background-color: $negNotifRed;
+
+  }
+
+}
 
 
 //chart wrap
