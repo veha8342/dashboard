@@ -106,39 +106,61 @@
 
 //TABLES
 
-.table{
+.table {
   border-collapse: collapse;
   font-size: $tableFontSize;
   cursor: pointer;
 
-  &.full-width{
+  &.full-width {
     width: 100%;
   }
 
+  tbody {
 
-  tbody{
+    tr {
 
-     tr{
+      &:hover {
+        background-color: $tableTrHover;
+      }
 
-       &:hover{
-         background-color: $tableTrHover;
-       }
+      td {
 
-       &:last-child{
+        &:last-child {
+          display: flex;
+        }
 
-         td{
-           border-bottom: 1px solid $lightGrey;
-         }
+        .table-icon {
+          margin-left: auto;
+          color: transparent;
+          font-size: 14px;
 
-       }
+          & > span {
+            margin-right: 20px;
+          }
+        }
+      }
 
-       &:hover{
-         background-color: $tableTrHover;
-       }
-     }
+      &:last-child {
+
+        td {
+          border-bottom: 1px solid $lightGrey;
+
+        }
+      }
+
+      &:hover {
+        background-color: $tableTrHover;
+
+        .table-icon {
+          color: #9c9c9c;
+
+
+        }
+      }
+    }
   }
 
-  .table-sort{
+  .table-sort {
     color: $grey;
     padding: 38px 0 15px 20px;
     border-radius: 2px;
@@ -148,7 +170,7 @@
     //  width: 30%;
     //}
 
-    & span:hover{
+    & span:hover {
       padding: 2px 5px;
       margin-left: -5px;
       background-color: $xsLightGrey;
@@ -156,18 +178,18 @@
       //margin: 0 0 0 -2px;
     }
   }
-  tr{
+  tr {
 
-    th{
+    th {
       padding: 30px 18px;
       color: $grey;
     }
 
-    td{
+    td {
       padding: $indent;
       border-top: 1px solid $lightGrey;
 
-      &.td-title{
+      &.td-title {
         font-size: 16px;
         color: $grey;
       }
@@ -204,8 +226,8 @@
     width: 8px;
     height: 8px;
     position: absolute;
-    top: 19px;
-    right: 0;
+    top: -2px;
+    right: -20px;
   }
 
   a{
@@ -224,7 +246,7 @@
 
 //pagination
 %activePaginationLink{
-  background-color: $xsLightGreen;
+  background-color: #f1f3f3;
   color: $grey;
   border-radius: 2px;
 }
@@ -232,6 +254,7 @@
 .pagination{
   padding: 17px 0 35px 0;
   li {
+
     display: inline-block;
 
     &.active{
