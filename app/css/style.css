@@ -171,6 +171,8 @@ select {
     font-size: 14px; }
     .table tbody tr td .table-icon > span {
       margin-right: 20px; }
+      .table tbody tr td .table-icon > span:hover {
+        color: red; }
   .table tbody tr:last-child td {
     border-bottom: 1px solid #e3e3e3; }
   .table tbody tr:hover {
@@ -544,6 +546,8 @@ input {
   .modal .modal-footer {
     padding: 18px;
     border-top: 1px solid #e3e3e3; }
+    .modal .modal-footer input {
+      text-align: left; }
 
 input[type="checkbox"] {
   display: none; }
@@ -586,7 +590,8 @@ input[type="checkbox"] {
               flex-wrap: wrap; }
     .checkbox-wrap .checkboxes .checkbox-group {
       padding: 12px;
-      margin-right: 18px; }
+      margin-right: 18px;
+      cursor: pointer; }
       .checkbox-wrap .checkboxes .checkbox-group:hover {
         background-color: #f5f5f2; }
       .checkbox-wrap .checkboxes .checkbox-group:hover .icon {
@@ -612,7 +617,8 @@ input[type="checkbox"] {
         -ms-flex-positive: 1;
             flex-grow: 1; }
     #add-links-modal .filtres .scheme-input input {
-      width: 96%; }
+      width: 96%;
+      text-align: left; }
   #add-links-modal .filtres .choose-company {
     display: -webkit-box;
     display: -webkit-flex;
@@ -634,11 +640,13 @@ input[type="checkbox"] {
 
 #add-banners-modal {
   width: 1075px; }
-  #add-banners-modal .scheme-input input {
+  #add-banners-modal .scheme-input {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
+    #add-banners-modal .scheme-input input {
+      text-align: left; }
 
 canvas {
   padding-bottom: 55px; }
@@ -894,7 +902,7 @@ canvas {
 .jq-selectbox__select {
   position: relative;
   height: 40px;
-  border: #e3e3e3;
+  border: 1px solid #e3e3e3;
   -webkit-border-radius: 2px;
           border-radius: 2px;
   /*background: linear-gradient(#FFF, #E6E6E6);*/
@@ -1922,6 +1930,3 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 16px; }
-
-.table-icon .icon:hover {
-  color: #f58220; }
