@@ -732,7 +732,7 @@
       margin: 0 -18px;
 
       .Language{
-        flex-grow: 0.3;
+        flex-grow: 0.2;
         margin-left: 16px;
 
         .country-flag-fr{
@@ -906,16 +906,37 @@ input {
 }
 
 #add-banners-modal {
+
   width: 1075px;
 
-  .scheme-input{
-    flex-grow: 1;
+  .filtres-scheme{
+    h3{
+      margin-bottom: 15px;
+    }
 
-    input{
-        text-align: left;
+    .scheme-name{
+      flex-grow: 1;
+
+      .scheme-input{
+        flex-grow: 1;
+
+
+
+        input{
+          text-align: left;
+          width: 96%;
+        }
       }
 
+      .choose-company{
+        flex-grow: 1;
+      }
+    }
   }
+
+
+
+
 
 }
 
