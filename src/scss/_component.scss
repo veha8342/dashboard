@@ -736,9 +736,11 @@
         margin-left: 16px;
 
         .country-flag-fr{
+          display: inline-block;
           background-image: url("../img/flag.png");
           background-repeat: no-repeat;
-          background-position: 15px 10px;
+          background-position: 70px 10px;
+          width: 100%;
         }
       }
 

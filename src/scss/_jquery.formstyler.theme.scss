@@ -251,7 +251,7 @@
 .jq-selectbox__trigger {
 
 	position: absolute;
-	top: 18px;
+	top: 15px;
 	right: 18px;
 	width: 34px;
 	height: 100%;
@@ -285,10 +285,10 @@
 	border-top-color: #AAA;
 }
 .jq-selectbox__dropdown {
+	width: 100%;
 	top: 30px;
 	left: 0;
 	box-sizing: border-box;
-	width: 100%;
 	padding: 0;
 	border: 1px solid #CCC;
 	border-radius: 4px;

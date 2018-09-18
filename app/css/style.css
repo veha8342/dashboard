@@ -531,9 +531,11 @@ input {
                 flex-grow: 0.2;
         margin-left: 16px; }
         .modal .modal-body .filtres .Language .country-flag-fr {
+          display: inline-block;
           background-image: url("../img/flag.png");
           background-repeat: no-repeat;
-          background-position: 15px 10px; }
+          background-position: 70px 10px;
+          width: 100%; }
       .modal .modal-body .filtres input {
         margin-right: 16px; }
       .modal .modal-body .filtres .scheme-name {
@@ -941,7 +943,7 @@ canvas {
 
 .jq-selectbox__trigger {
   position: absolute;
-  top: 18px;
+  top: 15px;
   right: 18px;
   width: 34px;
   height: 100%;
@@ -978,11 +980,11 @@ canvas {
   border-top-color: #AAA; }
 
 .jq-selectbox__dropdown {
+  width: 100%;
   top: 30px;
   left: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
   padding: 0;
   border: 1px solid #CCC;
   -webkit-border-radius: 4px;

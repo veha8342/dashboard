@@ -574,7 +574,7 @@
 						//}
 
 						// подстраиваем ширину выпадающего списка в зависимости от самого широкого пункта
-						if (liWidthInner > selectbox.width()) dropdown.width(liWidthInner);
+						// if (liWidthInner > selectbox.width()) dropdown.width(liWidthInner);
 
 						// прячем 1-ю пустую опцию, если она есть и если атрибут data-placeholder не пустой
 						// если все же нужно, чтобы первая пустая опция отображалась, то указываем у селекта: data-placeholder=""
