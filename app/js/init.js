@@ -88,7 +88,7 @@ $( function() {
 
     modalBtns.on('click', function (event) {
         // event.preventDefault();
-
+        // console.log(this);
         var target = $(this).attr('data-modal');
 
         $(target).bPopup({
