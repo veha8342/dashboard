@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Postback</title>
+    <title>postback</title>
 
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -16,7 +16,6 @@
 
     <!--JQUERY CSS-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -64,53 +63,85 @@
     <div class="content-wrapper">
         <div class="panel">
             <div class="panel-header">
-                <h3 class="page-title">Payout history</h3>
+                <h3 class="page-title">NEW POSTBACK</h3>
             </div>
 
             <div class="panel-body">
                 <span>You can insert some parameters in this postback:</span>
-
                 <div class="signup-deposit flex-container justify-content-sb">
                     <div class="signup flex-grow">
-                        <h3>Signup</h3>
+                        <h3 class="section-title">Signup</h3>
                         <textarea>crm_userId =%user_id%
                             subid =%p%</textarea>
                     </div>
                     <div class="deposit flex-grow">
-                        <h3>Deposit</h3>
+                        <h3 class="section-title">Deposit</h3>
                         <textarea>crm_userId =%user_id%
                                 subid =%p%</textarea>
                     </div>
                 </div>
                 <div class="filtres flex-container">
-                    <select name="" id="postback-type" data-placeholder="Select" class="modal-select">
-                        <option value=""></option>
-                        <option value=""><span class="country-flag"></span>FR</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                    </select>
-                    <select name="" id="to-countries" data-placeholder="Select" class="modal-select">
-                        <option value=""></option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>`
-                        <option value="">6</option>
-                    </select>
-                    <select name="" id="send-options" data-placeholder="All" class="modal-select">
-                        <option value=""></option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>`
-                        <option value="">6</option>
-                    </select>
+                    <div class="select-wrap">
+                        <h3 class="section-title">Postback type</h3>
+                        <select name="" id="postback-type" data-placeholder="Select" class="modal-select">
+                            <option value=""></option>
+                            <option value=""><span class="country-flag"></span>FR</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                        </select>
+                    </div>
+                    <div class="select-wrap">
+                        <h3 class="section-title">To countries</h3>
+                        <select name="" id="to-countries" data-placeholder="Select" class="modal-select">
+                            <option value=""></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>`
+                            <option value="">6</option>
+                        </select>
+                    </div>
+                    <div class="select-wrap">
+                        <h3 class="section-title">Sending Options</h3>
+                        <select name="" id="send-options" data-placeholder="All" class="modal-select">
+                            <option value=""></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>`
+                            <option value="">6</option>
+                        </select>
+                    </div>
                 </div>
+                <div class="checkbox-range-wrap">
+                        <div class="checkboxes">
+                            <h3><span>NOT</span>send statuses</h3>
+                            <div class="scrollbar-inner">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="checkNumber" id="checkNumber">
+                                    <label for="checkNumber">checkNumber</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="noAswer" id="noAswer">
+                                    <label for="noAswer">noAswer</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="noCall" id="noCall">
+                                    <label for="noCall">noCall</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="callAgain" id="callAgain">
+                                    <label for="callAgain">callAgain</label>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

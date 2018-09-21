@@ -361,6 +361,16 @@ select {
     padding: 18px; }
   .panel .panel-body {
     padding: 0 18px; }
+    .panel .panel-body .select-wrap {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      padding: 25px 0 37px 0; }
+      .panel .panel-body .select-wrap + .select-wrap {
+        margin-left: 18px; }
+      .panel .panel-body .select-wrap h3 {
+        padding-bottom: 25px; }
   .panel .panel-footer {
     padding: 30px 0; }
   .panel .panel-form {
@@ -669,10 +679,23 @@ canvas {
 .signup-deposit .deposit {
   margin-left: 16px; }
 
+.signup-deposit h3 {
+  padding: 25px 0 20px 0; }
+
 .signup-deposit textarea {
   width: 100%;
   height: 185px;
   resize: none; }
+
+.checkbox-range-wrap .scrollbar-inner {
+  height: 200px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-right: 20px; }
+
+.checkbox-range-wrap .checkbox-group + .checkbox-group {
+  margin-top: 25px; }
 
 .jq-checkbox,
 .jq-radio {
