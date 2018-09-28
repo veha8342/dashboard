@@ -31,6 +31,6 @@
   "dependencies": {
     "gulp-svg-symbols": "github:hiswe/gulp-svg-symbols",
     "install": "^0.10.4",
-    "npm": "^5.6.0"
+    "npm": "^5.10.0"
   }
 }

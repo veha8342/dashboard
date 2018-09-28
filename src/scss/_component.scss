@@ -1,4 +1,4 @@
-//component
+checkbox-group//component
 
 .circle{
   display: inline-block;
@@ -978,13 +978,25 @@ canvas{
 
 .checkbox-range-wrap{
 
+  padding: 25px 0;
+
+  .checkboxes{
+
+    h3{
+      margin-bottom: 35px;
+
+    }
+  }
+
   .scrollbar-inner{
-    height: 200px;
+    height: 150px;
     flex-wrap: wrap;
     padding-right: 20px;
   }
 
   .checkbox-group{
+
+
     & + .checkbox-group{
       margin-top: 25px;
     }

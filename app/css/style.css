@@ -97,13 +97,13 @@ select {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.circle {
+checkbox-group.circle {
   display: inline-block;
   -webkit-border-radius: 50%;
           border-radius: 50%; }
-  .circle.online {
+  checkbox-group.circle.online {
     background-color: #04ae00; }
-  .circle.offline {
+  checkbox-group.circle.offline {
     background-color: #ff0000; }
 
 .section-title, .page-title, .list-title {
@@ -687,15 +687,18 @@ canvas {
   height: 185px;
   resize: none; }
 
-.checkbox-range-wrap .scrollbar-inner {
-  height: 200px;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  padding-right: 20px; }
-
-.checkbox-range-wrap .checkbox-group + .checkbox-group {
-  margin-top: 25px; }
+.checkbox-range-wrap {
+  padding: 25px 0; }
+  .checkbox-range-wrap .checkboxes h3 {
+    margin-bottom: 35px; }
+  .checkbox-range-wrap .scrollbar-inner {
+    height: 150px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-right: 20px; }
+  .checkbox-range-wrap .checkbox-group + .checkbox-group {
+    margin-top: 25px; }
 
 .jq-checkbox,
 .jq-radio {
