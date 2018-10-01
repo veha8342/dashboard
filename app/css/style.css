@@ -218,7 +218,9 @@ checkbox-group.circle {
     height: 8px;
     position: absolute;
     top: -2px;
-    right: -20px; }
+    right: -20px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
   .user-control a {
     margin-right: 30px; }
   .user-control span {
@@ -271,7 +273,9 @@ checkbox-group.circle {
       width: 17px;
       height: 17px;
       background-color: #80bfca;
-      margin-right: 13px; }
+      margin-right: 13px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
     .color-tab-wrap .tab-wrap .color-tab span {
       font-size: 13px; }
     .color-tab-wrap .tab-wrap .color-tab + .color-tab {
@@ -1970,3 +1974,9 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 16px; }
+
+._mobileSidebar main {
+  padding-left: 60px; }
+
+._mobileSidebar .aside {
+  width: 60px; }

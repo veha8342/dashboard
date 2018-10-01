@@ -232,6 +232,7 @@ checkbox-group//component
     position: absolute;
     top: -2px;
     right: -20px;
+    border-radius: 50%;
   }
 
   a{
@@ -320,6 +321,7 @@ checkbox-group//component
         height: 17px;
         background-color: $greenTabBg;
         margin-right: 13px;
+        border-radius: 50%;
       }
 
       span{
@@ -1002,3 +1004,5 @@ canvas{
     }
   }
 }
+
+

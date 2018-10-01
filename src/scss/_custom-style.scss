@@ -30,3 +30,14 @@ main{
 
 }
 
+._mobileSidebar{
+  main{
+    padding-left: $sideBarMobileWidth
+  }
+  .aside{
+    width: $sideBarMobileWidth;
+  }
+}
+
+
+
