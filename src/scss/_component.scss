@@ -453,6 +453,15 @@ checkbox-group//component
           position: absolute;
           right: 0;
           top: 0;
+          border-radius: 50%;
+
+          &.online{
+            background-color: $green;
+          }
+
+          &.offline{
+            background-color: $red;
+          }
 
         }
       }
