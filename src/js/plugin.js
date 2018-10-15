@@ -16,7 +16,7 @@
 
     });
 
-    $(window).on('resize', function (e) {
+    $(window).on('resize load', function (e) {
         var width = $(this).width();
         console.log(width);
 
