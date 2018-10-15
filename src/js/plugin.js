@@ -1,5 +1,5 @@
 ;(function(){
-
+// sidebar mobile
     var menuBtn = $(".menu-btn");
     var body = $("body");
     var mobileSidebarClass = '_mobileSidebar';
@@ -27,6 +27,26 @@
             body.removeClass(mobileSidebarClass);
             body.removeClass(openInMobileClass);
         }
-    });
+    })
+
+    //loaderHide
+
+    var loader = $('#loading');
+
+    $(window).on('load', function(){
+        loader.addClass('hide');
+    })
+
+    //dropdown menu
+
+    var dropdownWrap = $('.dropdown-wrap');
+
+    dropdownWrap.on('click', function(e){
+        e.preventDefault();
+
+        var dropdown = $(this).find('.dropdown-menu');
+        console.log(dropdown);
+        dropdown.slideToggle();
+    })
 
 })();

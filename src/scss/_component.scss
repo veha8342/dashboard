@@ -8,6 +8,11 @@
   z-index: 999;
   margin-top: 0px;
   top: 0px;
+  transition: opacity 0.3s linear, z-index .1s linear .3s;
+}
+#loading.hide{
+  z-index: -1;
+  opacity: 0;
 }
 #loading-center{
   width: 100%;
@@ -1070,4 +1075,21 @@ canvas{
   }
 }
 
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2 );
+  top: 100%;
+  left: 0;
+}
 
+.dropdown-wrap{
+  position: relative;
+  //&:hover{
+  //  .dropdown-menu{
+  //    display: block;
+  //  }
+  //}
+}

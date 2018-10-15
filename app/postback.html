@@ -20,6 +20,33 @@
 
 </head>
 <body>
+<header class="fixed-to-top header">
+    <div class="flex-container container-fluid-header text-end">
+        <div class="user-control flex-container align-items-center dropdown-wrap">
+            <span class="icon icon-wallet"></span>
+            <span class="page-title">$1,500,00</span>
+            <span class="icon icon-arrow-down" ></span>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="user-control flex-container align-items-center">
+            <span class="icon icon-notification"><span class="circle"></span></span>
+        </div>
+        <div class="user-control flex-container align-items-center">
+            <span class="icon icon-profile"></span>
+            <a href="#" class="link">Leonardo dicaprio</a>
+        </div>
+        <div class="user-control flex-container align-items-center">
+            <span class="icon icon-quit"></span>
+        </div>
+    </div>
+</header>
+
 
 <aside class="aside fixed-to-top">
     <div class="menu-control flex-container align-items-center justify-content-sb">
@@ -45,7 +72,7 @@
         <!--<li><a href="#"><span class="icon icon-postback"></span>Postback</a></li>-->
         <!--</ul>-->
         <ul>
-            <li class="active">
+            <li>
                 <a href="index.html">
                     <span class="text-center icon icon-general"></span>
                     <span class="menu-link">General</span>
@@ -70,7 +97,7 @@
                 </a>
             </li>
             <li>
-                <a href="personal-data.html">
+                <a href="personal data.html">
                     <span class="text-center icon icon-personaldata"></span>
                     <span class="menu-link">Personal data</span>
                 </a>
@@ -81,7 +108,7 @@
                     <span class="menu-link">Payout</span>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="postback.html">
                     <span class="text-center icon icon-postback"></span>
                     <span class="menu-link">Postback</span>
@@ -191,6 +218,14 @@
     </div>
 </main>
 
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div id="object"></div>
+            </div>
+        </div>
+    </div>
+
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -199,9 +234,12 @@
 <script src="js/jquery.scrollbar.js"></script>
 <script src="js/jquery.formstyler.js"></script>
 
-
 <!--INIT PLUGINS-->
 <script src="js/init.js"></script>
+
+
+<!--Plugin-->
+<script src="js/plugins.min.js"></script>
 
 </body>
 </html>
