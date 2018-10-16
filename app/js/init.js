@@ -35,57 +35,57 @@ $( function() {
     //chart init
     // chart init
     // chart init
-    var ctx = document.getElementById("myChart");
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["01", "02", "04", "05", "06", "07", "08", "09", "10"],
-            datasets: [{
-                label: 'Signups',
-                data: [100, 175, 135, 190, 100, 150, 175, 143, 110],
-                backgroundColor: [
-                    'rgba(128, 191, 202, 1)',
-                    'rgba(128, 191, 202, 1)',
-                    'rgba(128, 191, 202, 1)',
-                    'rgba(128, 191, 202, 1)',
-                    'rgba(128, 191, 202, 1)',
-                    'rgba(128, 191, 202, 1)',
-                    'rgba(128, 191, 202, 1)',
-                    'rgba(128, 191, 202, 1)',
-                    'rgba(128, 191, 202, 1)',
-                ],
-
-            },
-                {
-                    label: 'FTD',
-                    data: [190, 120, 200, 210, 150, 175, 143, 110, 130],
+    if(document.getElementById("myChart")){ var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["01", "02", "04", "05", "06", "07", "08", "09", "10"],
+                datasets: [{
+                    label: 'Signups',
+                    data: [100, 175, 135, 190, 100, 150, 175, 143, 110],
                     backgroundColor: [
-                        'rgba(255, 154, 56, 1)',
-                        'rgba(255, 154, 56, 1)',
-                        'rgba(255, 154, 56, 1)',
-                        'rgba(255, 154, 56, 1)',
-
-                        'rgba(255, 154, 56, 1)',
-                        'rgba(255, 154, 56, 1)',
-                        'rgba(255, 154, 56, 1)',
-                        'rgba(255, 154, 56, 1)',
-                        'rgba(255, 154, 56, 1)',
+                        'rgba(128, 191, 202, 1)',
+                        'rgba(128, 191, 202, 1)',
+                        'rgba(128, 191, 202, 1)',
+                        'rgba(128, 191, 202, 1)',
+                        'rgba(128, 191, 202, 1)',
+                        'rgba(128, 191, 202, 1)',
+                        'rgba(128, 191, 202, 1)',
+                        'rgba(128, 191, 202, 1)',
+                        'rgba(128, 191, 202, 1)',
                     ],
 
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
+                },
+                    {
+                        label: 'FTD',
+                        data: [190, 120, 200, 210, 150, 175, 143, 110, 130],
+                        backgroundColor: [
+                            'rgba(255, 154, 56, 1)',
+                            'rgba(255, 154, 56, 1)',
+                            'rgba(255, 154, 56, 1)',
+                            'rgba(255, 154, 56, 1)',
+
+                            'rgba(255, 154, 56, 1)',
+                            'rgba(255, 154, 56, 1)',
+                            'rgba(255, 154, 56, 1)',
+                            'rgba(255, 154, 56, 1)',
+                            'rgba(255, 154, 56, 1)',
+                        ],
+
                     }
-                }]
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
             }
-        }
-    });
+        }); }
 
     //modal init
 
@@ -115,7 +115,7 @@ $( function() {
 
     //formstyler
 
-       $('#choose-company, #choose-flag, #weight-height, #design, #file-type , #postback-type, #to-countries, #send-options').styler();
+       $('#choose-company, #choose-flag, #weight-height, #design, #file-type, #postback-type, #to-countries, #send-options').styler();
 
     //scrollbar init
 
