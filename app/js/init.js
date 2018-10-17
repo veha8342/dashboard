@@ -35,7 +35,8 @@ $( function() {
     //chart init
     // chart init
     // chart init
-    if(document.getElementById("myChart")){ var ctx = document.getElementById("myChart");
+    if(document.getElementById("myChart"))
+    { var ctx = document.getElementById("myChart");
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -144,6 +145,25 @@ $( function() {
     });
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

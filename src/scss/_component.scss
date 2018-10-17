@@ -1050,6 +1050,11 @@ canvas{
 
 .checkbox-range-wrap{
 
+
+  .checkboxes{
+    width: 50%;
+  }
+
   padding: 25px 0;
 
   .checkboxes{
@@ -1093,3 +1098,45 @@ canvas{
   //  }
   //}
 }
+
+
+// Range slider
+
+.checkbox-range-wrap #slider{
+  width: 50%;
+  top: 100px;
+}
+
+#custom-handle{
+  top: 12px;
+
+  span {
+    position: absolute;
+    top: 25px;
+    transform: translateX(-35%);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

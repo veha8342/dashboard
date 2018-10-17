@@ -36,7 +36,6 @@
     $(window).on('load', function(){
         loader.addClass('hide');
     })
-
     //dropdown menu
 
     var dropdownWrap = $('.dropdown-wrap');
@@ -50,3 +49,18 @@
     })
 
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
