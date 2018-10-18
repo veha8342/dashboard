@@ -1073,9 +1073,16 @@ canvas{
 
   .checkbox-group{
 
+    padding: 5px 0;
 
     & + .checkbox-group{
       margin-top: 25px;
+      display: flex;
+    }
+
+    label{
+      display: flex;
+      align-items: center
     }
   }
 }
@@ -1088,6 +1095,23 @@ canvas{
   box-shadow: 0 0 10px rgba(0, 0, 0, .2 );
   top: 100%;
   left: 0;
+      li{
+        padding: 10px;
+
+        &:hover{
+          background-color: $lightGrey;
+        }
+
+        & + li{
+          margin-top: 5px;
+
+        }
+
+        a{
+          display: block;
+        }
+      }
+
 }
 
 .dropdown-wrap{
@@ -1105,15 +1129,23 @@ canvas{
 .checkbox-range-wrap #slider{
   width: 50%;
   top: 100px;
+  margin-left: 20px;
 }
 
 #custom-handle{
   top: 12px;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border: 20px solid transparent;
+  border-bottom-color: aqua;
+  outline: none;
 
   span {
     position: absolute;
     top: 25px;
-    transform: translateX(-35%);
+    transform: translateX(-50%);
+    color: #000;
   }
 
 }
