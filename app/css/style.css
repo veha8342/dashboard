@@ -97,6 +97,10 @@ select {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
+.text-red {
+  color: #ff0000;
+  font-family: 700; }
+
 #loading {
   background-color: #bd4932;
   height: 100%;
@@ -757,7 +761,11 @@ canvas {
   resize: none; }
 
 .checkbox-range-wrap {
-  padding: 25px 0; }
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 25px 18px 28px;
+  margin-bottom: 30px;
+  margin: 0 -18px; }
   .checkbox-range-wrap .checkboxes {
     width: 50%; }
   .checkbox-range-wrap .checkboxes h3 {
@@ -807,26 +815,29 @@ canvas {
 .dropdown-wrap {
   position: relative; }
 
-.checkbox-range-wrap #slider {
+.range-slider {
   width: 50%;
-  top: 100px;
   margin-left: 20px; }
 
-#custom-handle {
-  top: 12px;
-  width: 0;
-  height: 0;
-  background-color: transparent;
-  border: 20px solid transparent;
-  border-bottom-color: aqua;
-  outline: none; }
-  #custom-handle span {
-    position: absolute;
-    top: 25px;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    color: #000; }
+.checkbox-range-wrap #slider {
+  top: 100px; }
+  .checkbox-range-wrap #slider .ui-slider-range {
+    background-color: #f58220; }
+  .checkbox-range-wrap #slider #custom-handle {
+    top: 12px;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: 20px solid transparent;
+    border-bottom-color: #f58220;
+    outline: none; }
+    .checkbox-range-wrap #slider #custom-handle span {
+      position: absolute;
+      top: 25px;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      color: #000; }
 
 .jq-checkbox,
 .jq-radio {
